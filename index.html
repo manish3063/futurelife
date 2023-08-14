@@ -10,22 +10,49 @@
 <body>
   <div class="container">
 
-    <div class="top-header" >
+    <div class="top-header relative" >
 
-        <!-- <div>
-            <img src="https://cdn.shopify.com/s/files/1/0569/3014/0312/files/header-swish.png?v=1636368058" alt="" class="h-10">
-        </div> -->
-        <div>
-            <img src="https://cdn.shopify.com/s/files/1/0569/3014/0312/files/logo.png?v=1637047441" alt="" class="w-40">
-
-        </div>
+      <div class="mb-8">
+        <img src="https://cdn.shopify.com/s/files/1/0569/3014/0312/files/header-swish.png?v=1636368058" alt="" class="h-[100px]  w-[300%]">
     </div>
+      <div>
+        <img src="https://cdn.shopify.com/s/files/1/0569/3014/0312/files/logo.png?v=1637047441" alt="" class="w-52 absolute top-[32%] left-[5%]">
+
+    </div>
+  </div>
+
+
+
+  
+  
+
     <header class="flex justify-between">
+
         <div class="left">
             <ul class="flex mx-20">
                 <li class="px-3">HOME</li>
-                <li class="px-3">SHOP OUR PRODUCTS</li>
-                <li class="px-3">SMART CENTRE</li>
+
+                <li class="px-3 relative group hover">
+                  SHOP OUR PRODUCTS
+                  <!-- <ul class="sub-menu left-[5px] absolute  opacity-0 group-hover:opacity-100 transition-opacity">
+                    <li class="p-2">SHOP</li>
+                    <li class="p-2">SHOP ALL</li>
+                    
+                  </ul> -->
+                
+                </li>
+
+
+
+                <li class="px-3 relative group hover">
+                  SMART CENTRE
+                <!-- <ul class="sub-menu left-[5px] absolute  opacity-0 group-hover:opacity-100 transition-opacity">
+                  <li>THE SCIENCE</li>
+                  <li>SMARTPROTEIN3D™</li>
+                </ul> -->
+                </li>
+
+
                 <li class="px-3">WHERE TO BUY</li>
             </ul>
         </div>
@@ -181,7 +208,7 @@
   </div>
 
   <section class="product-slider">
-    <div class="product-title text-center mt-10 text-gray-700">Featured Products</div>
+    <div class="product-title text-center mt-10 text-[#595959] text-2xl font-bold uppercase">Featured Products</div>
     <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4 pl-24 pr-24">
         <div class="w-full relative flex items-center justify-center">
             <button aria-label="slide backward" class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
@@ -195,11 +222,18 @@
                         <img src="https://in.futurelife.com/cdn/shop/products/HPVan_5000x.png?v=1675225451" alt="black chair and white table" class="object-cover object-center w-96" />
                         <!-- <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                             <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 1</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
+                            <div class="flex h-full items-end ">
+                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Minimal Interior</h3>
                             </div>
                         </div> -->
+                       
                     </div>
+                    <div class="absolute top-[91%]">FUTURELIFE® HIGH PROTEIN Smart food™ <br><span class="ml-[100px]">Vanilla</span> </div>
+
+                    <div class="absolute top-[100%] left-[90px]">Rs. 450.00</div>
+                   
+
+
                     <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                         <img src="https://in.futurelife.com/cdn/shop/products/81h_2B3vcpM9L._SL1500_5000x.jpg?v=1675225429" alt="sitting area" class="object-cover object-center w-96" />
                         <!-- <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
@@ -209,6 +243,11 @@
                             </div>
                         </div> -->
                     </div>
+                    <div class="absolute top-[90%] left-[500px]">FUTURELIFE® Crunchy Granola - Honey</div>
+                    <div class="absolute top-[100%] left-[600px]">Rs. 250.00</div>
+
+
+
                     <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                         <img src="https://in.futurelife.com/cdn/shop/products/AmazonRenders_1kg_AmazonrenderSmartwhiteOats1kg-01_5000x.jpg?v=1626683261" alt="sitting area" class="object-cover object-center w-96" />
                         <!-- <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
@@ -218,6 +257,11 @@
                             </div>
                         </div> -->
                     </div>
+                    <div class="absolute top-[90%] left-[950px]">FUTURELIFE® Smart White Oats</div>
+                    <div class="absolute top-[100%] left-[1050px]">Rs. 50.00</div>
+
+
+
                     <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                         <img src="https://in.futurelife.com/cdn/shop/products/HPChoc_978e6817-d851-460c-bda4-c389f12ada7f_5000x.png?v=1675225448" alt="sitting area" class="object-cover object-center w-96" />
                         <!-- <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
@@ -339,19 +383,73 @@
 
 
  <section class="featured-content flex">
-<div class="content-left pl-10 w-2/3">
-<h1>FUTURELIFE® CRUNCHY GRANOLA</h1>
+<div class="content-left pl-10 w-2/3 py-48">
+<h1 class="font-bold text-[#595959] text-2xl uppercase">FUTURELIFE® CRUNCHY <br> GRANOLA</h1>
 <p>Delicious honey or chocolate flavoured clusters of rolled oats and crispy puffed rice, wrapped in the goodness of FUTURELIFE®️ Smart food™️. FUTURELIFE®️ Crunchy Granola is a Source of Protein, High in Fibre and a Source of Energy. Enjoy these golden delicious clusters with milk, yoghurt, added to a smoothie or enjoy on-the-go as a crunchy snack.</p>
-<button>READ MORE</button>
+<button class="pt-5 text-xs text-[#595959]">READ MORE</button>
 </div>
 <div class="content-right">
 <img src="https://in.futurelife.com/cdn/shop/files/FUTURELIFE_INDIA_GRANOLA_5000x.png?v=1640254105" alt="" class="">
 </div>
+</section>
+
+<!-- 
+<section class="mb-56">
+  <div class="smartcentre grid lg:grid-cols-2 md:grid-cols-2 gap-5">
+    <div class=" border-solid border-b-2 py-3 text-center"><img src="https://in.futurelife.com/cdn/shop/files/FL_INDIA_STRAWBERRY_5000x.png?v=1640260325" alt=""></div>
+
+    <div class="bg-green-500 py-3 text-center">
+      <img src="https://in.futurelife.com/cdn/shop/files/FL_INDIA_APPLE_SMOOTHIE_5000x.png?v=1640260501" alt="">
+
+<div class="flex justify-around">
+  <div><img src="https://in.futurelife.com/cdn/shop/files/FL_INDIA_CHOC_BANANA_9d9a88c8-2148-4007-a3dc-61e50f0e6621_5000x.png?v=1640273961" alt=""></div>
+  <div><img src="https://in.futurelife.com/cdn/shop/files/FL_INDIA_MANGO_LASSI_1c171c2c-09ee-427b-9679-d5550b77788b_5000x.png?v=1640273994" alt=""></div>
+</div>
+     
+    </div>
+    
+</div>
+</section>  -->
 
 
- </section>
+<!-- <section class="pl-24 pr-24">
+  <h1 class="font-bold text-[#595959] text-2xl uppercase text-center pb-4">SMART CENTRE</h1>
+  <div class="grid grid-rows-2 grid-flow-col gap-4 mb-20">
+    <div class="row-span-3">
+
+      <img src="https://in.futurelife.com/cdn/shop/files/FL_INDIA_STRAWBERRY_5000x.png?v=1640260325" alt="" class="w-[100%] h-auto object-cover">
+    
+    </div>
+
+    <div class="col-span-2 w-[70%]">
+      <img src="https://in.futurelife.com/cdn/shop/files/FL_INDIA_APPLE_SMOOTHIE_5000x.png?v=1640260501" alt="">
+    </div>
 
 
+    <div class="row-span-2 col-span-1 w-[50%]">
+      <img src="https://in.futurelife.com/cdn/shop/files/FL_INDIA_CHOC_BANANA_9d9a88c8-2148-4007-a3dc-61e50f0e6621_5000x.png?v=1640273961" alt="">
+    </div>
+
+
+    <div class="row-span-2 col-span-1 w-[50%]">
+      <img src="https://in.futurelife.com/cdn/shop/files/FL_INDIA_MANGO_LASSI_1c171c2c-09ee-427b-9679-d5550b77788b_5000x.png?v=1640273994" alt="">
+    </div>
+  </div>
+
+</section> -->
+
+<section>
+
+
+<h1 class="font-bold text-[#595959] text-2xl uppercase text-center pb-4">SMART CENTRE</h1>
+<div class="grid grid-cols-4 gap-4 pb-24 pl-24 pr-24 max-w-[1300px] mx-auto">
+  <div class=" col-span-2 row-span-2"><img src="https://in.futurelife.com/cdn/shop/files/FL_INDIA_STRAWBERRY_5000x.png?v=1640260325" alt=""></div>
+  <div class=" col-span-2"><img src="https://in.futurelife.com/cdn/shop/files/FL_INDIA_APPLE_SMOOTHIE_5000x.png?v=1640260501" alt="" class="w-[100%]"></div>
+  <div class=" col-start-3"><img src="https://in.futurelife.com/cdn/shop/files/FL_INDIA_CHOC_BANANA_9d9a88c8-2148-4007-a3dc-61e50f0e6621_5000x.png?v=1640273961" alt=""></div>
+  <div class=" col-start-4"><img src="https://in.futurelife.com/cdn/shop/files/FL_INDIA_MANGO_LASSI_1c171c2c-09ee-427b-9679-d5550b77788b_5000x.png?v=1640273994" alt=""></div>
+</div>
+
+</section>
 
   </div>
 
