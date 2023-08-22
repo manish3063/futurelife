@@ -6,7 +6,7 @@ import {
 // Initialize the Carousel component
 initTE({ Carousel });
 
-//Product slider
+// Product slider
 // let defaultTransform = 0;
 // const slideWidth = 398; // Width of each slide item
 // const itemsPerSlide = 4; // Number of items per slide
