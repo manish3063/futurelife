@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="input.css">
     <title>Document</title>
 </head>
-<body>
+<body class="font-[Futura,sans-serif;]">
   <div class="container">
 
     <div class="announcement--wrapper bg-[#333333]">
-      <div class="announcment-content px-2 max-w-[1200px] mx-auto text-center text-white p-2 text-[10px] font-medium tracking-[1px]">
-        <p>FREE SHIPPING OVER R400 + FREE SAMPLES WITH ALL ORDERS</p>
+      <div class="announcment-content px-2 max-w-[1200px] mx-auto text-center text-white p-2 font-[400] tracking-[1px]">
+        <p class="p-[1px] text-[10px]">FREE SHIPPING OVER R400 + FREE SAMPLES WITH ALL ORDERS</p>
+        
       </div>
    
     </div>
 
     <div class="top-header relative" >
 
-      <div>
-        <img src="https://cdn.shopify.com/s/files/1/0569/3014/0312/files/header-swish.png?v=1636368058" alt="" class="h-[100px]  w-[300%]">
+      <div class="new-swish-banner">
+        <img src="https://cdn.shopify.com/s/files/1/0569/3014/0312/files/header-swish.png?v=1636368058" alt="" class="h-[100px]  w-[300%] max-md:h-[70px] max-md:w-[120%]">
     </div>
-      <div>
-        <img src="https://cdn.shopify.com/s/files/1/0569/3014/0312/files/logo.png?v=1637047441" alt="" class="w-52 absolute top-[32%] left-[5%]">
+      <div class="new-swish-logo">
+        <img src="https://cdn.shopify.com/s/files/1/0569/3014/0312/files/logo.png?v=1637047441" alt="" class="w-52 absolute top-[32%] left-[3%] max-md:w-[45%] max-md:p-[2%] max-md:ml-[5%] max-md:mt-[2%] max-md:top-[0%]">
 
     </div>
   </div>
@@ -462,11 +465,373 @@
       </div>
     </nav>
   </header>
+  <!-- start mobile view menu -->
+<!-- 
+  <header class="mobile view md:hidden">
+
+    <div class="abc flex justify-between py-[5px] px-[16px]">
+      <div class="left-side">
+      
+       
+         <div class="hamburgur">
+           <ion-icon name="menu-outline" class="text-3xl p-1"></ion-icon>
+         </div>
+       
+         <div class="close-hamb absolute top-0 right-0 text-white ">
+           <ion-icon name="close-outline"></ion-icon>
+         </div>
+
+      </div>
+      <div class="right-side">
+        <div class="py-[10px] text-[14px] pl-0">
+          <a href="" class="text-[#595959]">CART</a>
+        </div>
+      </div>
+
+      
+    </div>
+	
+	  <div class="menu-wraper text-[#595959] fixed top-0 left-0 bg-white z-[90] w-[80%] h-full ease-in-out duration-700 overflow-hidden">
+
+      <div class="mobile-nav--header flex justify-between ">
+        <div class="mobile-nav--search">
+           <a href="/search" class="block py-8 px-4 text-[13px]">SEARCH</a>
+        </div>
+        <div class="mobile-nav--login">
+           <a href="/account/login" class="block py-8 px-4 text-[13px]">VIEW ACCOUNT</a>
+        </div>
+     </div>
+
+
+
+          <div class="pt-[10px] pr-[31px] pb-[10px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative">
+             <a href="" class="leading-[2.3]">HOME</a>
+           </div>
+       
+          <div class="pt-[10px] pr-[31px] pb-[10px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative">
+
+
+            <div class="leading-[2.3] arrow"><ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon>
+              SHOP 
+            
+            </div>
+            
+   
+
+
+<div class="sub-menu absolute bg-red-500 w-full h-[252px] top-[-50px] left-0 ease-in-out duration-700 z-[1]">
+           
+            <div class="leading-[2.3] back">BACK</div>
+            <div><a href="" class="leading-[2.3]">SHOP ALL</a></div>
+            <div><a href="" class="leading-[2.3]">SHOP ALL</a></div>
+            <div><a href="" class="leading-[2.3]">SHOP ALL</a></div>
+</div>
+          
+          
+           </div>
+           
+
+
+          <div class="pt-[10px] pr-[31px] pb-[10px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative">
+            <div class="leading-[2.3] arrow1" ><ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon>
+              OUR PRODUCTS</div>
+
+              <div class="sub-menu1 absolute bg-red-500 w-full h-[252px] top-[-100px] left-0 ease-in-out duration-700">
+           
+                <div class="leading-[2.3] back1">BACK</div>
+                <div><a href="" class="leading-[2.3]">SHOP ALL</a></div>
+                <div><a href="" class="leading-[2.3]">SHOP ALL</a></div>
+                <div><a href="" class="leading-[2.3]">SHOP ALL</a></div>
+    </div>
+            
+            
+       
+          </div>
+          
+          <div class="pt-[10px] pr-[31px] pb-[10px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0">
+           <a href="" class="leading-[2.3]">SMART CENTRE</a>
+       
+          </div>
+          <div class="pt-[10px] pr-[31px] pb-[10px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0">
+           <a href="" class="leading-[2.3]">DOWNLOAD APP</a>
+       
+          </div>
+          <div class="pt-[10px] pr-[31px] pb-[10px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0">
+           <a href="" class="leading-[2.3]">COUNTRY</a>
+       
+          </div>
+       
+         </div>
+   
+    
+
+  
+  
+
+  </header> -->
+  
+  <header class="mobile view md:hidden">
+    <div class="abc flex justify-between py-[5px] px-[16px]">
+       <div class="left-side">
+          <div class="hamburgur">
+             <ion-icon name="menu-outline" class="text-3xl p-1"></ion-icon>
+          </div>
+          <div class="close-hamb absolute top-0 right-0 text-white ">
+             <ion-icon name="close-outline"></ion-icon>
+          </div>
+       </div>
+       <div class="right-side">
+          <div class="py-[10px] text-[14px] pl-0">
+             <a href="" class="text-[#595959]">CART</a>
+          </div>
+       </div>
+    </div>
+    
+    
+    
+    
+    <div class="menu-wraper text-[#595959] fixed top-0 left-0 bg-white z-[90] w-[80%] h-full ease-in-out duration-700 overflow-hidden overflow-y-scroll">
+    
+    
+       <div class="mobile-nav--header flex justify-between ">
+          <div class="mobile-nav--search">
+             <a href="/search" class="block py-8 px-4 text-[13px]">SEARCH</a>
+          </div>
+          <div class="mobile-nav--login">
+             <a href="/account/login" class="block py-8 px-4 text-[13px]">VIEW ACCOUNT</a>
+          </div>
+       </div>
+     
+ <nav class="relative">
+   <ul>
+     <li>
+   <a href="" class=" pr-[35px] py-[20px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block">HOME</a>
+   </li>
+   
+   <li>
+     <a href="#" class=" pr-[35px] py-[20px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block arrow">SHOP <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon></a>
+     
+     <ul class="sub-menu absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[1]">
+
+
+      <li><a href="#" class="leading-[2.3] back pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block text-center"><ion-icon name="chevron-back-outline" class="absolute left-[12px] top-[22px]"></ion-icon> BACK</a></li>
+
+
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SHOP</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SHOP ALL</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">BUNDLES</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">OFFERS</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">BULK SAVINGS</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">ACCESSORIES</a></li>
+     </ul>
+
+
+    </li>
+
+
+
+
+
+    <li>
+     <a href="#" class=" pr-[35px] py-[20px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block " id="arrow1">OUR PRODUCTS <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon></a>
+
+         <ul class="sub-menu1 absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[3]">
+
+          <li><a href="#" class="leading-[2.3] back1 pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block text-center"><ion-icon name="chevron-back-outline" class="absolute left-[12px] top-[22px]"></ion-icon> BACK</a></li>
+
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">OUR PRODUCTS</a></li>
+
+
+      <li>
+    <a href="#" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block" id="arrow3">SHOP <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon>
+    </a>
+        <ul class="sub-menu3 absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[1]">
+
+
+          <li><a href="#" class="leading-[2.3] back3 pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block text-center"><ion-icon name="chevron-back-outline" class="absolute left-[12px] top-[22px]"></ion-icon> BACK</a></li>
+    
+    
+          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SHOP</a></li>
+          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">BUNDLES</a></li>
+          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">OFFERS</a></li>
+
+          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">ACCESSORIES</a></li>
+          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SHOP ALL</a></li>
+         
+         </ul>
+      
+      
+      </li>
+
+
+      <li>
+        <a href="#" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block " id="arrow4">OUR RANGE  <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon></a>
+
+        <ul class="sub-menu4 absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[1]">
+
+
+          <li><a href="#" class="leading-[2.3] back4 pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block text-center"><ion-icon name="chevron-back-outline" class="absolute left-[12px] top-[22px]"></ion-icon> BACK</a></li>
+    
+    
+          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">OUR RANGE</a></li>
+          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">VIEW ALL</a></li>
+          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SMART FOOD™</a></li>
+
+          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">HIGH PROTEIN</a></li>
+          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">GRANOLA CRUNCH</a></li>
+          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SMART INSTANT OATS</a></li>
+          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">BRAN FLAKES</a></li>
+          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">BARS</a></li>
+          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">KIDS</a></li>
+          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block "> TOTS</a></li>
+          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">REPAIR FOOD™</a></li>
+          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">BEAUTI FOOD™</a></li>
+         
+         </ul>
+     </li>
+
+
+
+      <li>
+    <a href="#" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block" id="arrow5">VIEW BY PRODUCT  <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon></a>
+
+    <ul class="sub-menu5 absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[1]">
+
+
+      <li><a href="#" class="leading-[2.3] back5 pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block text-center"><ion-icon name="chevron-back-outline" class="absolute left-[12px] top-[22px]"></ion-icon> BACK</a></li>
+
+
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">VIEW BY PRODUCT</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Smart food™</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Wheat Smart food™</a></li>
+
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Zero Smart food™
+      </a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Energize Drinking Meal</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">High Protein Smart food™</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">High Protein Shake</a></li>
+
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">High Protein Bar</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">High Protein Lite Bar</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block "> High Energy Protein Crunch Bar</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">High Energy Bar</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Smart Instant Oats</a></li>
+
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Smart Oats Energy Bar</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Granola Crunch</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Granola Bar</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Bran Flakes & Barley</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Kids</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Tots</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Repair Food™ Shake</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Repair Food™ Bar</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Beauti Food™ Shake</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Beauti Food™ Bar</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Vitamin & Mineral Powder - Vitamix
+      </a></li>
+     
+     </ul>
+
+    </li>
+
+     <li>
+    <a href="#" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block" id="arrow6">VIEW BY SCIENCE  <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon></a>
+
+    <ul class="sub-menu6 absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[1]">
+
+
+      <li><a href="#" class="leading-[2.3] back6 pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block text-center"><ion-icon name="chevron-back-outline" class="absolute left-[12px] top-[22px]"></ion-icon> BACK</a></li>
+
+
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">VIEW BY SCIENCE</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Moducare®</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SmartProtein3D™</a></li>
+
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">High Protein</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Howaru Premium Probiotics</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Acti8™</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Supro®</a></li>
+
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Gluten Free</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Low GI</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block "> High GI</a></li>
+
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Wholegrain Goodness</a></li>
+     
+
+  
+     
+     </ul>
+
+
+
+      </li>
+
+
+
+      
+     </ul>
+    </li>
+
+
+    <li>
+     <a href="#" class=" pr-[35px] py-[20px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block" id="arrow2">SMART CENTRE <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon></a>
+
+     <ul class="sub-menu2 absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[3]">
+
+      <li><a href="#" class="leading-[2.3] back2 pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block text-center"><ion-icon name="chevron-back-outline" class="absolute left-[12px] top-[22px]"></ion-icon> BACK</a></li>
+
+  <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SMART CENTRE</a></li>
+  <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">RESOURCES</a></li>
+  <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">OUR THE SCIENCE</a></li>
+  <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">LIBRARY</a></li>
+  <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">OUR COMMUNITY</a></li>
+  
+ </ul>
+
+
+
+
+      </li>
+
+
+
+    <li>
+     <a href="" class=" pr-[35px] py-[20px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block">DOWNLOAD APP </a>
+      </li>
+   
+   
+   
+   </ul>
+ </nav>
+ 
+ <nav>
+  <ul>
+ <li>
+     <a href="" class="leading-[2.3]">COUNTRY </a>
+      </li>
+   
+  </ul>
+ </nav>	  
+     
+     
+      
+ </header>
+
+  <!-- end mobile view menu  -->
 </section>
 
+
+
+
+
+
+
+
+<section class="banner-slider max-md:hidden">
 <div
-    id="carouselExampleCaptions"
-    class="relative w-auto md:px-24"
+    id="carouselExampleCaptions2"
+    class="relative w-auto pl-24 pr-24"
     data-te-carousel-init
     data-te-ride="carousel">
     <!--Carousel indicators-->
@@ -475,7 +840,7 @@
       data-te-carousel-indicators>
       <button
         type="button"
-        data-te-target="#carouselExampleCaptions"
+        data-te-target="#carouselExampleCaptions2"
         data-te-slide-to="0"
         data-te-carousel-active
         class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-[50%] bg-[#595959] mr-[7px]"
@@ -486,7 +851,7 @@
 
       <button
         type="button"
-        data-te-target="#carouselExampleCaptions"
+        data-te-target="#carouselExampleCaptions2"
         data-te-slide-to="1"
         class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-[50%] bg-[#595959] mr-[7px]"
         aria-label="Slide 2"></button>
@@ -495,7 +860,7 @@
 
       <button
         type="button"
-        data-te-target="#carouselExampleCaptions"
+        data-te-target="#carouselExampleCaptions2"
         data-te-slide-to="2"
         class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-[50%] bg-[#595959] mr-[7px]"
         aria-label="Slide 3"></button>
@@ -503,32 +868,27 @@
 
 
   
-    <!--Carousel items---------------------------------------------------------------------------------------------------------------------------------------->
+    <!--Carousel items-->
     <div
       class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
       <!--First item-->
       <div
-        class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none flex max-md:flex-col-reverse "
+        class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
         data-te-carousel-active
         data-te-carousel-item
         style="backface-visibility: hidden">
+        <img
+          src="https://futurelife.com/cdn/shop/files/FL_DESKTOP_BANNERS_10_5000x.png?v=1691744088"
+          class="block w-full"
+          alt="..." />
         <div
-          class=" pl-[25px] pr-[25px] text-white md:w-[35%] bg-[#71a333] max-md:p-4  p-[30px] inline-block">
-          <h5 class="text-xl tracking-[.2rem] font-bold pb-4 md:mt-[100px]">DON'T MISS THESE NEW MID <br> MONTH SAVINGS!</h5>
+          class="absolute top-[155px] max-w-[34%] pl-[25px] pr-[25px] text-white">
+          <h5 class="text-xl tracking-[.2rem] font-bold pb-4">DON'T MISS THESE NEW MID <br> MONTH SAVINGS!</h5>
           <p class="text-sm pb-4">
             New exclusive mid month offers just launched. R70 double deals!
           </p>
           <button class="bg-white pl-4 pr-4 h-11 text-[#000000] rounded-sm">SHOP NOW</button>
         </div>
-      
-         <div class="image md:w-[65%] inline-block">
-          <img
-          src="slide-1.jpg"
-          
-          alt="..." />
-         </div>
-       
-        
       </div>
 
 
@@ -621,7 +981,184 @@
         >Next</span
       >
     </button>
+</div>
+</section>
+<!-- start banner slider for mobile view  -->
+<section class="banner-slider-mobile md:hidden">
+  <div
+    id="carouselExampleCaptions3"
+    class="relative w-auto md:px-24"
+    data-te-carousel-init
+    data-te-ride="carousel">
+    <!--Carousel indicators-->
+    <div
+      class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-end p-0"
+      data-te-carousel-indicators>
+      <button
+        type="button"
+        data-te-target="#carouselExampleCaptions3"
+        data-te-slide-to="0"
+        data-te-carousel-active
+        class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-[50%] bg-[#595959] mr-[7px]"
+        aria-current="true"
+        aria-label="Slide 1"></button>
+
+
+
+      <button
+        type="button"
+        data-te-target="#carouselExampleCaptions3"
+        data-te-slide-to="1"
+        class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-[50%] bg-[#595959] mr-[7px]"
+        aria-label="Slide 2"></button>
+
+
+
+      <button
+        type="button"
+        data-te-target="#carouselExampleCaptions3"
+        data-te-slide-to="2"
+        class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-[50%] bg-[#595959] mr-[7px]"
+        aria-label="Slide 3"></button>
+    </div>
+
+
+  
+    <!--Carousel items---------------------------------------------------------------------------------------------------------------------------------------->
+    <div
+      class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+      <!--First item-->
+      <div
+        class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none  max-md:flex-col-reverse max-md:flex"
+        data-te-carousel-active
+        data-te-carousel-item
+        style="backface-visibility: hidden">
+        <div
+          class=" pl-[25px] pr-[25px] text-white md:w-[35%] bg-[#71a333] max-md:p-4  p-[30px]">
+          <h5 class="text-xl tracking-[.2rem] font-bold pb-4 md:mt-[100px]">slide1</h5>
+          <p class="text-sm pb-4">
+            New exclusive mid month offers just launched. R70 double deals!
+          </p>
+          <button class="bg-white pl-4 pr-4 h-11 text-[#000000] rounded-sm">SHOP NOW</button>
+        </div>
+      
+         <div class="image md:w-[65%]">
+          <img
+          src="slide-1.jpg"
+          
+          alt="..." />
+         </div>
+       
+        
+      </div>
+
+
+      <!--Second item-->
+      <div
+      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none  max-md:flex-col-reverse max-md:flex "
+      
+      data-te-carousel-item
+      style="backface-visibility: hidden">
+      <div
+        class=" pl-[25px] pr-[25px] text-white md:w-[35%] bg-[#71a333] max-md:p-4  p-[30px]">
+        <h5 class="text-xl tracking-[.2rem] font-bold pb-4 md:mt-[100px]">slide2</h5>
+        <p class="text-sm pb-4">
+          New exclusive mid month offers just launched. R70 double deals!
+        </p>
+        <button class="bg-white pl-4 pr-4 h-11 text-[#000000] rounded-sm">SHOP NOW</button>
+      </div>
+    
+       <div class="image md:w-[65%]">
+        <img
+        src="slide-2.jpg"
+        
+        alt="..." />
+       </div>
+     
+      
+    </div>
+
+      <!--Third item-->
+      <div
+      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none  max-md:flex-col-reverse max-md:flex  "
+      
+      data-te-carousel-item
+      style="backface-visibility: hidden">
+      <div
+        class=" pl-[25px] pr-[25px] text-white md:w-[35%] bg-[#71a333] max-md:p-4  p-[30px] inline-block">
+        <h5 class="text-xl tracking-[.2rem] font-bold pb-4 md:mt-[100px]">slide3</h5>
+        <p class="text-sm pb-4">
+          New exclusive mid month offers just launched. R70 double deals!
+        </p>
+        <button class="bg-white pl-4 pr-4 h-11 text-[#000000] rounded-sm">SHOP NOW</button>
+      </div>
+    
+       <div class="image md:w-[65%] inline-block">
+        <img
+        src="slide-1.jpg"
+        
+        alt="..." />
+       </div>
+     
+      
+    </div>
+
+    </div>
+  
+    <!--Carousel controls - prev item-->
+    <button
+      class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+      type="button"
+      data-te-target="#carouselExampleCaptions3"
+      data-te-slide="prev">
+      <span class=" h-8 w-8 hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+      </span>
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Previous</span
+      >
+    </button>
+    <!--Carousel controls - next item-->
+    <button
+      class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+      type="button"
+      data-te-target="#carouselExampleCaptions3"
+      data-te-slide="next">
+      <span class=" h-8 w-8 hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+      </span>
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Next</span
+      >
+    </button>
   </div>
+
+</section>
+<!-- end banner slider for mobile view -->
 
   <section class="product-slider">
     <div class="product-title text-center mt-10 pb-8 text-[#595959] text-2xl font-bold uppercase">Featured Products</div>
@@ -758,9 +1295,12 @@
  </section>
 
  <section class="vide0">
-<header
-  class="relative flex items-center justify-center h-screen  overflow-hidden max-md:w-80 max-md:h-[180px]"
+
+
+      <header
+  class="relative flex items-center justify-center h-screen  overflow-hidden  max-md:h-[180px]"
 >
+
   <!-- <div
     class="relative z-30 p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl"
   >
@@ -770,7 +1310,7 @@
     autoplay
     loop
     muted
-    class="absolute z-10 w-full"
+    class="absolute z-[5] w-full"
   >
     <source
       src="FUTURELIFE India.mp4"
@@ -1366,6 +1906,13 @@
   </div>
 </section>
 
+<!-- test -->
+
+
+<!--  -->
+
+
+
 
 <section class=" pt-12 pl-0 pr-0 text-[#595959] relative ">
   <img id="footer-background-image" src="https://cdn.shopify.com/s/files/1/0569/3014/0312/files/FooterBanner.png?v=1631460429" class="absolute left-0 top-0 right-0 z-[-1] max-md:hidden">
@@ -1475,7 +2022,6 @@
 </section>
 
 
-
  </div>
 
   <!-- <script type="module" src="app.js"></script> -->
@@ -1499,6 +2045,114 @@
   </script>
 
   <!--  -->
+  <script>
+    $(document).ready(function(){
+        // Hide the element with the ID "myElement" when the page loads
+        $(".menu-wraper").hide();
+        $(".close-hamb").hide();
+    
+        // Show the hidden element when the "Show" button is clicked
+        $(".hamburgur").click(function(){
+          $(".menu-wraper").show().css('transform', 'translateX(0%)');
+          
+            $(".hamburgur").hide();
+            $(".close-hamb").show();
+        });
+    
+        $(".close-hamb").click(function(){
+          $(".menu-wraper").css('transform', 'translateX(-100%)');
+           $(".hamburgur").show();
+            $(".close-hamb").hide();
+            
+        });
+    
+        $(".sub-menu").hide();
+        $(".arrow").click(function(){
+         $(".sub-menu").show().css('transform', 'translateX(0%)');
+        
+        });
+        $(".back").click(function(){
+           $(".sub-menu").css('transform', 'translateX(100%)');
+        
+        });
+        
+        // 2nd element
+        $(".sub-menu1").hide();
+    
+    $("#arrow1 ").click(function(){
+    $(".sub-menu1").show().css('transform', 'translateX(0%)');
+    
+    });
+    
+    $(".back1").click(function(){
+    $(".sub-menu1").css('transform', 'translateX(100%)');
+    
+    
+    
+    });
+
+
+      // smart center
+      $(".sub-menu2").hide();
+     $("#arrow2 ").click(function(){
+    $(".sub-menu2").show().css('transform', 'translateX(0%)');
+    });
+    
+    $(".back2").click(function(){
+    $(".sub-menu2").css('transform', 'translateX(100%)');
+    });
+
+      // Shop
+       $(".sub-menu3").hide();
+     $("#arrow3 ").click(function(){
+    $(".sub-menu3").show().css('transform', 'translateX(0%)');
+    });
+    
+    $(".back3").click(function(){
+    $(".sub-menu3").css('transform', 'translateX(100%)');
+    });
+
+   // our range
+   $(".sub-menu4").hide();
+     $("#arrow4 ").click(function(){
+    $(".sub-menu4").show().css('transform', 'translateX(0%)');
+    });
+    
+    $(".back4").click(function(){
+    $(".sub-menu4").css('transform', 'translateX(100%)');
+    });
+
+  // View By Products
+  $(".sub-menu5").hide();
+     $("#arrow5 ").click(function(){
+    $(".sub-menu5").show().css('transform', 'translateX(0%)');
+    });
+    
+    $(".back5").click(function(){
+    $(".sub-menu5").css('transform', 'translateX(100%)');
+    });
+
+     // View By science
+  $(".sub-menu6").hide();
+     $("#arrow6 ").click(function(){
+    $(".sub-menu6").show().css('transform', 'translateX(0%)');
+    });
+    
+    $(".back6").click(function(){
+    $(".sub-menu6").css('transform', 'translateX(100%)');
+    });
+    
+    
+
+
+
+
+    
+    });
+ </script>
+
+
+
 
 </body>
 </html>
