@@ -1,722 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <link rel="stylesheet" href="input.css">
-    <title>Document</title>
-</head>
-<body class="font-[Futura,sans-serif;]">
-  <div class="container">
-
-    <div class="announcement--wrapper bg-[#333333]">
-      <div class="announcment-content px-2 max-w-[1200px] mx-auto text-center text-white p-2 font-[400] tracking-[1px]">
-        <p class="p-[1px] text-[10px]">FREE SHIPPING OVER R400 + FREE SAMPLES WITH ALL ORDERS</p>
-        
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <link
+      href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css"
+      rel="stylesheet"
+    />
+  
+      <link rel="stylesheet" href="input.css">
+      <title>Document</title>
+   </head>
+   <body class="font-[Futura,sans-serif;] text-[#595959]">
+      <div class="container">
+         <div class="announcement--wrapper bg-[#333333]">
+            <div class="announcment-content px-2 max-w-[1200px] mx-auto text-center text-white p-2 font-[400] tracking-[1px]">
+               <p class="p-[1px] text-[10px]">FREE SHIPPING OVER R400 + FREE SAMPLES WITH ALL ORDERS</p>
+            </div>
+         </div>
+         <div class="top-header relative" >
+            <div class="new-swish-banner">
+               <img src="https://cdn.shopify.com/s/files/1/0569/3014/0312/files/header-swish.png?v=1636368058" alt="" class="h-[100px]  w-[300%] max-md:h-[70px] max-md:w-[120%]">
+            </div>
+            <div class="new-swish-logo">
+               <img src="https://cdn.shopify.com/s/files/1/0569/3014/0312/files/logo.png?v=1637047441" alt="" class="w-52 absolute top-[32%] left-[3%] max-md:w-[45%] max-md:p-[2%] max-md:ml-[5%] max-md:mt-[2%] max-md:top-[0%]">
+            </div>
+         </div>
+         <section class="navbar max-md:hidden">
+            <header class="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm pt-4 pb-8 dark:bg-gray-800">
+               <nav class="max-w-[85rem] w-full mx-auto px-4 ml-[8%] sm:flex sm:items-center sm:justify-between text-[#595959] font-[Futura,sans-serif]" aria-label="Global">
+                  <div class="flex items-center justify-between gap-7">
+                     <a class="flex-none" href="#">HOME</a>
+                     <div class="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]">
+                        <button type="button" class="flex items-center w-full text-gray-600 hover:text-gray-400 font-medium dark:text-gray-400 dark:hover:text-gray-500 menu-drop">
+                           SHOP
+                           <svg class="ml-2 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                           </svg>
+                        </button>
+                        <div class="hs-dropdown-menu transition-[opacity,margin] sm:border duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100  w-full  z-10 top-full left-0 min-w-[15rem] bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute before:-top-5 before:left-0 before:w-full before:h-5 absolute hidden menu-new-drop">
+                           <div class="sm:grid sm:grid-cols-5">
+                              <div class="flex flex-col">
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 SHOP ALL
+                                 </a>
+                              </div>
+                              <div class="flex flex-col">
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 BUNDLES
+                                 </a>
+                              </div>
+                              <div class="flex flex-col">
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 OFFERS
+                                 </a>
+                              </div>
+                              <div class="flex flex-col">
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 BULK SAVINGS
+                                 </a>
+                              </div>
+                              <div class="flex flex-col">
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 ACCESSORIES
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]">
+                        <button type="button" class="flex items-center w-full text-gray-600 hover:text-gray-400 font-medium dark:text-gray-400 dark:hover:text-gray-500 menu-drop" >
+                           OUR PRODUCTS
+                           <svg class="ml-2 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                           </svg>
+                        </button>
+                        <div class="hs-dropdown-menu transition-[opacity,margin] sm:border duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100  w-full  z-10 top-full left-0 min-w-[15rem] bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute before:-top-5 before:left-0 before:w-full before:h-5 absolute hidden menu-new-drop">
+                           <div class="sm:grid sm:grid-cols-5">
+                              <div class="flex flex-col">
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 SHOP
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 BUNDLES
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 OFFERS
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 ACCESSORIES
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 SHOP ALL
+                                 </a>
+                              </div>
+                              <div class="flex flex-col">
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 OUR RANGE
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 VIEW ALL
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 SMART FOOD™
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 HIGH PROTEIN
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 GRANOLA CRUNCH
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 SMART INSTANT OATS
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 BRAN FLAKES
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 BARS
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 KIDS
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 TOTS
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 REPAIR FOOD™
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 BEAUTI FOOD™
+                                 </a>
+                              </div>
+                              <div class="flex flex-col">
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 VIEW BY PRODUCT
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Smart food™
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Wheat Smart food™
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Zero Smart food™
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Energize Drinking Meal
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 High Protein Smart food™
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 High Protein Shake
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 High Protein Bar
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 High Protein Lite Bar
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 High Energy Protein Crunch Bar
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 High Energy Bar
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Smart Instant Oats
+                                 </a>
+                              </div>
+                              <div class="flex flex-col">
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 non
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Smart Oats Energy Bar
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Granola Crunch
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Granola Bar
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Bran Flakes & Barley
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Kids
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Tots
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Repair Food™ Shake
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Repair Food™ Bar
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Beauti Food™ Shake
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Beauti Food™ Bar
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Vitamin & Mineral Powder - Vitamix
+                                 </a>
+                              </div>
+                              <div class="flex flex-col">
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 VIEW BY SCIENCE
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Moducare®
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 SmartProtein3D™
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 High Protein
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Howaru Premium Probiotics
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Acti8™
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Supro®
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Gluten Free
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Low GI
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 High GI
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 Wholegrain Goodness
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]">
+                        <button type="button" class="flex items-center w-full text-gray-600 hover:text-gray-400 font-medium dark:text-gray-400 dark:hover:text-gray-500 menu-drop" >
+                           SMART CENTRE
+                           <svg class="ml-2 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                           </svg>
+                        </button>
+                        <div class="hs-dropdown-menu transition-[opacity,margin] sm:border duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100  w-full  z-10 top-full left-0 min-w-[15rem] bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute before:-top-5 before:left-0 before:w-full before:h-5 absolute hidden menu-new-drop">
+                           <div class="sm:grid sm:grid-cols-5">
+                              <div class="flex flex-col">
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 RESOURCES
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 KID'S CENTRE
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 MEET OUR DIETITIANS
+                                 </a>
+                              </div>
+                              <div class="flex flex-col">
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 THE SCIENCE
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 MODUCARE®
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 SMARTPROTEIN3D™
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 HIGH PROTEIN
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 HOWARU PREMIUM PROBIOTICS
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 ACTI8™
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 SUPRO®
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 GLUTEN FREE
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 GLYCAEMIC INDEX (GI)
+                                 </a>
+                              </div>
+                              <div class="flex flex-col">
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 LIBRARY
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 RECIPES
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 NUTRITION GUIDES
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 ARTICLES
+                                 </a>
+                              </div>
+                              <div class="flex flex-col">
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 OUR COMMUNITY
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 OUR PARTNERS
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 FEEDING SCHEMES
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 FUTUREPRENEURS
+                                 </a>
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 DIETITIANS
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="flex-none" href="#"> DOWNLOAD APP</a>
+                  </div>
+                  <div class="flex items-center gap-7">
+                     <a class="" href="#"> Cart</a>
+                     <div class="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]">
+                        <button type="button" class="flex items-center w-full text-gray-600 hover:text-gray-400 font-medium dark:text-gray-400 dark:hover:text-gray-500 menu-drop">
+                           COUNTRY
+                           <svg class="ml-2 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                           </svg>
+                        </button>
+                        <div class="hs-dropdown-menu transition-[opacity,margin] sm:border duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100  w-full  z-10 top-full left-0 min-w-[15rem] bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute before:-top-5 before:left-0 before:w-full before:h-5 absolute hidden menu-new-drop">
+                           <div class="sm:grid sm:grid-cols-5">
+                              <div class="flex flex-col">
+                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                                 SOUTH AFRICA
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="" href="#">SEARCH</a>
+                     <a class="" href="#">
+                        <svg class="icon--root icon--account w-5 text-[#595959]" viewBox="0 0 20 20">
+                           <path d="M13.33 9.78a9.654 9.654 0 016.32 9.06.9.9 0 01-.9.9H1.25a.9.9 0 01-.9-.9 9.654 9.654 0 016.32-9.06 5.342 5.342 0 116.66 0zM10 9.145a3.542 3.542 0 100-7.085 3.542 3.542 0 000 7.085zm7.799 8.795a7.851 7.851 0 00-15.598 0h15.598z" fill-rule="nonzero"></path>
+                        </svg>
+                     </a>
+                  </div>
       </div>
-   
-    </div>
-
-    <div class="top-header relative" >
-
-      <div class="new-swish-banner">
-        <img src="https://cdn.shopify.com/s/files/1/0569/3014/0312/files/header-swish.png?v=1636368058" alt="" class="h-[100px]  w-[300%] max-md:h-[70px] max-md:w-[120%]">
-    </div>
-      <div class="new-swish-logo">
-        <img src="https://cdn.shopify.com/s/files/1/0569/3014/0312/files/logo.png?v=1637047441" alt="" class="w-52 absolute top-[32%] left-[3%] max-md:w-[45%] max-md:p-[2%] max-md:ml-[5%] max-md:mt-[2%] max-md:top-[0%]">
-
-    </div>
-  </div>
-
-<section class="max-md:hidden">
-  <header class="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm pt-4 pb-8 dark:bg-gray-800">
-    <nav class="max-w-[85rem] w-full mx-auto px-4 ml-[8%] sm:flex sm:items-center sm:justify-between text-[#595959] font-[Futura,sans-serif]" aria-label="Global">
-      <div class="flex items-center justify-between gap-7">
-        <a class="flex-none" href="#">HOME</a>
-		
-      <div class="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]">
-            <button type="button" class="flex items-center w-full text-gray-600 hover:text-gray-400 font-medium dark:text-gray-400 dark:hover:text-gray-500 menu-drop">
-              SHOP
-              <svg class="ml-2 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-              </svg>
-            </button>
-  
-            <div class="hs-dropdown-menu transition-[opacity,margin] sm:border duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100  w-full  z-10 top-full left-0 min-w-[15rem] bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute before:-top-5 before:left-0 before:w-full before:h-5 absolute hidden menu-new-drop">
-              <div class="sm:grid sm:grid-cols-5">
-                <div class="flex flex-col">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    SHOP ALL
-                  </a>
-               
-                </div>
-                
-  
-                <div class="flex flex-col">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    BUNDLES
-                  </a>
-              
-                </div>
-
-                <div class="flex flex-col">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    OFFERS
-                  </a>
-                 
-                </div>
-  
-                <div class="flex flex-col">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    BULK SAVINGS
-                  </a>
-                
-                </div>
-                <div class="flex flex-col">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    ACCESSORIES
-                  </a>
-                
-                </div>
-
-              </div>
-            </div>
-			</div>
-     
-     
-    
-	 
-	  <div class="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]">
-            <button type="button" class="flex items-center w-full text-gray-600 hover:text-gray-400 font-medium dark:text-gray-400 dark:hover:text-gray-500 menu-drop" >
-             OUR PRODUCTS
-              <svg class="ml-2 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-              </svg>
-            </button>
-  
-            <div class="hs-dropdown-menu transition-[opacity,margin] sm:border duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100  w-full  z-10 top-full left-0 min-w-[15rem] bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute before:-top-5 before:left-0 before:w-full before:h-5 absolute hidden menu-new-drop">
-              <div class="sm:grid sm:grid-cols-5">
-                <div class="flex flex-col">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    SHOP
-                  </a>
-				    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    BUNDLES
-                  </a>
-				  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    OFFERS
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    ACCESSORIES
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    SHOP ALL
-                  </a>
-               
-                </div>
-				
-				<div class="flex flex-col">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    OUR RANGE
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    VIEW ALL
-                  </a>
-				    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    SMART FOOD™
-                  </a>
-				    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    HIGH PROTEIN
-                  </a>
-				    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    GRANOLA CRUNCH
-                  </a>
-				    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    SMART INSTANT OATS
-                  </a>
-				    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    BRAN FLAKES
-                  </a>
-				    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    BARS
-                  </a>
-				    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    KIDS
-                  </a>
-				    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    TOTS
-                  </a>
-				    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    REPAIR FOOD™
-                  </a>
-				    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    BEAUTI FOOD™
-                  </a>
-                 
-                </div>
-				
-				
-				
-				<div class="flex flex-col">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    VIEW BY PRODUCT
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    Smart food™
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    Wheat Smart food™
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    Zero Smart food™
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    Energize Drinking Meal
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    High Protein Smart food™
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    High Protein Shake
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    High Protein Bar
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    High Protein Lite Bar
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    High Energy Protein Crunch Bar
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    High Energy Bar
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                   Smart Instant Oats
-                  </a>
-                 
-                </div>
-				
-				
-				<div class="flex flex-col">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    non
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    Smart Oats Energy Bar
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    Granola Crunch
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    Granola Bar
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                   Bran Flakes & Barley
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                   Kids
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    Tots
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    Repair Food™ Shake
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    Repair Food™ Bar
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    Beauti Food™ Shake
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                   Beauti Food™ Bar
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    Vitamin & Mineral Powder - Vitamix
-                  </a>
-                 
-                </div>
-				
-				
-				
-				<div class="flex flex-col">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    VIEW BY SCIENCE
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    Moducare®
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    SmartProtein3D™
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    High Protein
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    Howaru Premium Probiotics
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    Acti8™
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    Supro®
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    Gluten Free
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    Low GI
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    High GI
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    Wholegrain Goodness
-                  </a>
-                 
-                </div>
-				
-				
-				
-				
-               </div>
-			   
-			  
-			 
-
-
-
-
-
-             
-            </div>
-			</div>
-	 
-	 
-	 
-	 
-	 
-	  
-	  <div class="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]">
-            <button type="button" class="flex items-center w-full text-gray-600 hover:text-gray-400 font-medium dark:text-gray-400 dark:hover:text-gray-500 menu-drop" >
-             SMART CENTRE
-              <svg class="ml-2 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-              </svg>
-            </button>
-  
-            <div class="hs-dropdown-menu transition-[opacity,margin] sm:border duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100  w-full  z-10 top-full left-0 min-w-[15rem] bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute before:-top-5 before:left-0 before:w-full before:h-5 absolute hidden menu-new-drop">
-              <div class="sm:grid sm:grid-cols-5">
-                <div class="flex flex-col">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                   RESOURCES
-                  </a>
-				    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                   KID'S CENTRE
-                  </a>
-				    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                   MEET OUR DIETITIANS
-                  </a>
-               
-                </div>
-				
-				
-				
-				
-				<div class="flex flex-col">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                   THE SCIENCE
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                   MODUCARE®
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                   SMARTPROTEIN3D™
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                   HIGH PROTEIN
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                   HOWARU PREMIUM PROBIOTICS
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                   ACTI8™
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                   SUPRO®
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                   GLUTEN FREE
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                   GLYCAEMIC INDEX (GI)
-                  </a>
-                 
-                </div>
-				
-				
-				
-				<div class="flex flex-col">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    LIBRARY
-                  </a>
-				    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    RECIPES
-                  </a>
-				    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    NUTRITION GUIDES
-                  </a>
-				    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    ARTICLES
-                  </a>
-                 
-                </div>
-				
-				
-				
-				
-				<div class="flex flex-col">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    OUR COMMUNITY
-                  </a>
-				   <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    OUR PARTNERS
-                  </a>
-				    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    FEEDING SCHEMES
-                  </a>
-				    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    FUTUREPRENEURS
-                  </a>
-				    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    DIETITIANS
-                  </a>
-                 
-                </div>
-				
-				
-				
-				
-				
-               </div>
-			   
-			  
-			 
-
-
-
-
-
-             
-            </div>
-			</div>
-	  
-	  
-	  
-	  
-      <a class="flex-none" href="#"> DOWNLOAD APP</a>
+      </div>
+      </nav>
+      </header>
+      <!-- start mobile view menu -->
       
-      </div>
-	  
-
-      <div class="flex items-center gap-7">
-      <a class="" href="#"> Cart</a>
- <div class="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]">
-            <button type="button" class="flex items-center w-full text-gray-600 hover:text-gray-400 font-medium dark:text-gray-400 dark:hover:text-gray-500 menu-drop">
-              COUNTRY
-              <svg class="ml-2 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-              </svg>
-            </button>
-  
-            <div class="hs-dropdown-menu transition-[opacity,margin] sm:border duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100  w-full  z-10 top-full left-0 min-w-[15rem] bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute before:-top-5 before:left-0 before:w-full before:h-5 absolute hidden menu-new-drop">
-              <div class="sm:grid sm:grid-cols-5">
-                <div class="flex flex-col">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    SOUTH AFRICA
-                  </a>
-               
-                </div>
-                
-  
-               
-
-              
-
-              </div>
-            </div>
-			</div>
-      <a class="" href="#">SEARCH</a>
-      <a class="" href="#">
-        <svg class="icon--root icon--account w-5 text-[#595959]" viewBox="0 0 20 20">
-          <path d="M13.33 9.78a9.654 9.654 0 016.32 9.06.9.9 0 01-.9.9H1.25a.9.9 0 01-.9-.9 9.654 9.654 0 016.32-9.06 5.342 5.342 0 116.66 0zM10 9.145a3.542 3.542 0 100-7.085 3.542 3.542 0 000 7.085zm7.799 8.795a7.851 7.851 0 00-15.598 0h15.598z" fill-rule="nonzero"></path>
-        </svg>
-      </a>
-    </div>
-			
-			
-			
-  
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- start mobile view menu -->
-<!-- 
-  <header class="mobile view md:hidden">
-
-    <div class="abc flex justify-between py-[5px] px-[16px]">
+      <header class="mobile view md:hidden">
+      <div class="abc flex justify-between py-[5px] px-[16px]">
       <div class="left-side">
-      
-       
-         <div class="hamburgur">
-           <ion-icon name="menu-outline" class="text-3xl p-1"></ion-icon>
-         </div>
-       
-         <div class="close-hamb absolute top-0 right-0 text-white ">
-           <ion-icon name="close-outline"></ion-icon>
-         </div>
-
+      <div class="hamburgur">
+      <ion-icon name="menu-outline" class="text-3xl p-1"></ion-icon>
+      </div>
+      <div class="close-hamb absolute top-0 right-0 text-white ">
+      <ion-icon name="close-outline"></ion-icon>
+      </div>
       </div>
       <div class="right-side">
-        <div class="py-[10px] text-[14px] pl-0">
-          <a href="" class="text-[#595959]">CART</a>
-        </div>
+      <div class="py-[10px] text-[14px] pl-0">
+      <a href="" class="text-[#595959]">CART</a>
       </div>
-
-      
-    </div>
-	
-	  <div class="menu-wraper text-[#595959] fixed top-0 left-0 bg-white z-[90] w-[80%] h-full ease-in-out duration-700 overflow-hidden">
-
+      </div>
+      </div>
+      <div class="menu-wraper text-[#595959] fixed top-0 left-0 bg-white z-[90] w-[80%] h-full ease-in-out duration-700 overflow-hidden overflow-y-scroll">
       <div class="mobile-nav--header flex justify-between ">
-        <div class="mobile-nav--search">
-           <a href="/search" class="block py-8 px-4 text-[13px]">SEARCH</a>
-        </div>
-        <div class="mobile-nav--login">
-           <a href="/account/login" class="block py-8 px-4 text-[13px]">VIEW ACCOUNT</a>
-        </div>
-     </div>
-
-
-
-          <div class="pt-[10px] pr-[31px] pb-[10px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative">
-             <a href="" class="leading-[2.3]">HOME</a>
-           </div>
-       
-          <div class="pt-[10px] pr-[31px] pb-[10px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative">
-
-
-            <div class="leading-[2.3] arrow"><ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon>
-              SHOP 
-            
-            </div>
-            
-   
-
-
-<div class="sub-menu absolute bg-red-500 w-full h-[252px] top-[-50px] left-0 ease-in-out duration-700 z-[1]">
-           
-            <div class="leading-[2.3] back">BACK</div>
-            <div><a href="" class="leading-[2.3]">SHOP ALL</a></div>
-            <div><a href="" class="leading-[2.3]">SHOP ALL</a></div>
-            <div><a href="" class="leading-[2.3]">SHOP ALL</a></div>
-</div>
-          
-          
-           </div>
-           
-
-
-          <div class="pt-[10px] pr-[31px] pb-[10px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative">
-            <div class="leading-[2.3] arrow1" ><ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon>
-              OUR PRODUCTS</div>
-
-              <div class="sub-menu1 absolute bg-red-500 w-full h-[252px] top-[-100px] left-0 ease-in-out duration-700">
-           
-                <div class="leading-[2.3] back1">BACK</div>
-                <div><a href="" class="leading-[2.3]">SHOP ALL</a></div>
-                <div><a href="" class="leading-[2.3]">SHOP ALL</a></div>
-                <div><a href="" class="leading-[2.3]">SHOP ALL</a></div>
-    </div>
-            
-            
-       
-          </div>
-          
-          <div class="pt-[10px] pr-[31px] pb-[10px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0">
-           <a href="" class="leading-[2.3]">SMART CENTRE</a>
-       
-          </div>
-          <div class="pt-[10px] pr-[31px] pb-[10px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0">
-           <a href="" class="leading-[2.3]">DOWNLOAD APP</a>
-       
-          </div>
-          <div class="pt-[10px] pr-[31px] pb-[10px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0">
-           <a href="" class="leading-[2.3]">COUNTRY</a>
-       
-          </div>
-       
-         </div>
-   
-    
-
-  
-  
-
-  </header> -->
-  
-  <header class="mobile view md:hidden">
-    <div class="abc flex justify-between py-[5px] px-[16px]">
-       <div class="left-side">
-          <div class="hamburgur">
-             <ion-icon name="menu-outline" class="text-3xl p-1"></ion-icon>
-          </div>
-          <div class="close-hamb absolute top-0 right-0 text-white ">
-             <ion-icon name="close-outline"></ion-icon>
-          </div>
-       </div>
-       <div class="right-side">
-          <div class="py-[10px] text-[14px] pl-0">
-             <a href="" class="text-[#595959]">CART</a>
-          </div>
-       </div>
-    </div>
-    
-    
-    
-    
-    <div class="menu-wraper text-[#595959] fixed top-0 left-0 bg-white z-[90] w-[80%] h-full ease-in-out duration-700 overflow-hidden overflow-y-scroll">
-    
-    
-       <div class="mobile-nav--header flex justify-between ">
-          <div class="mobile-nav--search">
-             <a href="/search" class="block py-8 px-4 text-[13px]">SEARCH</a>
-          </div>
-          <div class="mobile-nav--login">
-             <a href="/account/login" class="block py-8 px-4 text-[13px]">VIEW ACCOUNT</a>
-          </div>
-       </div>
-     
- <nav class="relative">
-   <ul>
-     <li>
-   <a href="" class=" pr-[35px] py-[20px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block">HOME</a>
-   </li>
-   
-   <li>
-     <a href="#" class=" pr-[35px] py-[20px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block arrow">SHOP <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon></a>
-     
-     <ul class="sub-menu absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[1]">
-
-
+      <div class="mobile-nav--search">
+      <a href="/search" class="block py-8 px-4 text-[13px]">SEARCH</a>
+      </div>
+      <div class="mobile-nav--login">
+      <a href="/account/login" class="block py-8 px-4 text-[13px]">VIEW ACCOUNT</a>
+      </div>
+      </div>
+      <nav class="relative">
+      <ul>
+      <li>
+      <a href="" class=" pr-[35px] py-[20px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block">HOME</a>
+      </li>
+      <li>
+      <a href="#" class=" pr-[35px] py-[20px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block arrow">SHOP <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon></a>
+      <ul class="sub-menu absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[1]">
       <li><a href="#" class="leading-[2.3] back pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block text-center"><ion-icon name="chevron-back-outline" class="absolute left-[12px] top-[22px]"></ion-icon> BACK</a></li>
-
-
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SHOP</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SHOP ALL</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">BUNDLES</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">OFFERS</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">BULK SAVINGS</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">ACCESSORIES</a></li>
-     </ul>
-
-
-    </li>
-
-
-
-
-
-    <li>
-     <a href="#" class=" pr-[35px] py-[20px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block " id="arrow1">OUR PRODUCTS <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon></a>
-
-         <ul class="sub-menu1 absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[3]">
-
-          <li><a href="#" class="leading-[2.3] back1 pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block text-center"><ion-icon name="chevron-back-outline" class="absolute left-[12px] top-[22px]"></ion-icon> BACK</a></li>
-
-      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">OUR PRODUCTS</a></li>
-
-
-      <li>
-    <a href="#" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block" id="arrow3">SHOP <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon>
-    </a>
-        <ul class="sub-menu3 absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[1]">
-
-
-          <li><a href="#" class="leading-[2.3] back3 pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block text-center"><ion-icon name="chevron-back-outline" class="absolute left-[12px] top-[22px]"></ion-icon> BACK</a></li>
-    
-    
-          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SHOP</a></li>
-          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">BUNDLES</a></li>
-          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">OFFERS</a></li>
-
-          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">ACCESSORIES</a></li>
-          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SHOP ALL</a></li>
-         
-         </ul>
-      
-      
+      </ul>
       </li>
-
-
       <li>
-        <a href="#" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block " id="arrow4">OUR RANGE  <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon></a>
-
-        <ul class="sub-menu4 absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[1]">
-
-
-          <li><a href="#" class="leading-[2.3] back4 pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block text-center"><ion-icon name="chevron-back-outline" class="absolute left-[12px] top-[22px]"></ion-icon> BACK</a></li>
-    
-    
-          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">OUR RANGE</a></li>
-          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">VIEW ALL</a></li>
-          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SMART FOOD™</a></li>
-
-          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">HIGH PROTEIN</a></li>
-          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">GRANOLA CRUNCH</a></li>
-          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SMART INSTANT OATS</a></li>
-          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">BRAN FLAKES</a></li>
-          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">BARS</a></li>
-          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">KIDS</a></li>
-          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block "> TOTS</a></li>
-          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">REPAIR FOOD™</a></li>
-          <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">BEAUTI FOOD™</a></li>
-         
-         </ul>
-     </li>
-
-
-
+      <a href="#" class=" pr-[35px] py-[20px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block " id="arrow1">OUR PRODUCTS <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon></a>
+      <ul class="sub-menu1 absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[3]">
+      <li><a href="#" class="leading-[2.3] back1 pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block text-center"><ion-icon name="chevron-back-outline" class="absolute left-[12px] top-[22px]"></ion-icon> BACK</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">OUR PRODUCTS</a></li>
       <li>
-    <a href="#" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block" id="arrow5">VIEW BY PRODUCT  <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon></a>
-
-    <ul class="sub-menu5 absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[1]">
-
-
+      <a href="#" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block" id="arrow3">SHOP <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon>
+      </a>
+      <ul class="sub-menu3 absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[1]">
+      <li><a href="#" class="leading-[2.3] back3 pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block text-center"><ion-icon name="chevron-back-outline" class="absolute left-[12px] top-[22px]"></ion-icon> BACK</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SHOP</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">BUNDLES</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">OFFERS</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">ACCESSORIES</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SHOP ALL</a></li>
+      </ul>
+      </li>
+      <li>
+      <a href="#" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block " id="arrow4">OUR RANGE  <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon></a>
+      <ul class="sub-menu4 absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[1]">
+      <li><a href="#" class="leading-[2.3] back4 pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block text-center"><ion-icon name="chevron-back-outline" class="absolute left-[12px] top-[22px]"></ion-icon> BACK</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">OUR RANGE</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">VIEW ALL</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SMART FOOD™</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">HIGH PROTEIN</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">GRANOLA CRUNCH</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SMART INSTANT OATS</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">BRAN FLAKES</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">BARS</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">KIDS</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block "> TOTS</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">REPAIR FOOD™</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">BEAUTI FOOD™</a></li>
+      </ul>
+      </li>
+      <li>
+      <a href="#" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block" id="arrow5">VIEW BY PRODUCT  <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon></a>
+      <ul class="sub-menu5 absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[1]">
       <li><a href="#" class="leading-[2.3] back5 pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block text-center"><ion-icon name="chevron-back-outline" class="absolute left-[12px] top-[22px]"></ion-icon> BACK</a></li>
-
-
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">VIEW BY PRODUCT</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Smart food™</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Wheat Smart food™</a></li>
-
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Zero Smart food™
       </a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Energize Drinking Meal</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">High Protein Smart food™</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">High Protein Shake</a></li>
-
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">High Protein Bar</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">High Protein Lite Bar</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block "> High Energy Protein Crunch Bar</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">High Energy Bar</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Smart Instant Oats</a></li>
-
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Smart Oats Energy Bar</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Granola Crunch</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Granola Bar</a></li>
@@ -729,1430 +473,856 @@
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Beauti Food™ Bar</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Vitamin & Mineral Powder - Vitamix
       </a></li>
-     
-     </ul>
-
-    </li>
-
-     <li>
-    <a href="#" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block" id="arrow6">VIEW BY SCIENCE  <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon></a>
-
-    <ul class="sub-menu6 absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[1]">
-
-
+      </ul>
+      </li>
+      <li>
+      <a href="#" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block" id="arrow6">VIEW BY SCIENCE  <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon></a>
+      <ul class="sub-menu6 absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[1]">
       <li><a href="#" class="leading-[2.3] back6 pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block text-center"><ion-icon name="chevron-back-outline" class="absolute left-[12px] top-[22px]"></ion-icon> BACK</a></li>
-
-
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">VIEW BY SCIENCE</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Moducare®</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SmartProtein3D™</a></li>
-
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">High Protein</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Howaru Premium Probiotics</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Acti8™</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Supro®</a></li>
-
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Gluten Free</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Low GI</a></li>
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block "> High GI</a></li>
-
       <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">Wholegrain Goodness</a></li>
-     
-
-  
-     
-     </ul>
-
-
-
+      </ul>
       </li>
-
-
-
-      
-     </ul>
-    </li>
-
-
-    <li>
-     <a href="#" class=" pr-[35px] py-[20px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block" id="arrow2">SMART CENTRE <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon></a>
-
-     <ul class="sub-menu2 absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[3]">
-
+      </ul>
+      </li>
+      <li>
+      <a href="#" class=" pr-[35px] py-[20px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block" id="arrow2">SMART CENTRE <ion-icon name="chevron-forward-outline" class="absolute right-[12px] top-[22px]"></ion-icon></a>
+      <ul class="sub-menu2 absolute bg-white w-full h-auto top-[0px] left-0 ease-in-out duration-700 z-[3]">
       <li><a href="#" class="leading-[2.3] back2 pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block text-center"><ion-icon name="chevron-back-outline" class="absolute left-[12px] top-[22px]"></ion-icon> BACK</a></li>
-
-  <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SMART CENTRE</a></li>
-  <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">RESOURCES</a></li>
-  <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">OUR THE SCIENCE</a></li>
-  <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">LIBRARY</a></li>
-  <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">OUR COMMUNITY</a></li>
-  
- </ul>
-
-
-
-
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">SMART CENTRE</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">RESOURCES</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">OUR THE SCIENCE</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">LIBRARY</a></li>
+      <li><a href="" class="leading-[2.3] pr-[35px] py-[15px] pl-[35px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block ">OUR COMMUNITY</a></li>
+      </ul>
       </li>
-
-
-
-    <li>
-     <a href="" class=" pr-[35px] py-[20px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block">DOWNLOAD APP </a>
+      <li>
+      <a href="" class=" pr-[35px] py-[20px] pl-[15px] text-[13px] border-t-[1px] border-[1px] border-[#e0e0e0] border-x-0 border-b-0 relative block">DOWNLOAD APP </a>
       </li>
-   
-   
-   
-   </ul>
- </nav>
- 
- <nav>
-  <ul>
- <li>
-     <a href="" class="leading-[2.3]">COUNTRY </a>
+      </ul>
+      </nav>
+      <nav>
+      <ul>
+      <li>
+      <a href="" class="leading-[2.3]">COUNTRY </a>
       </li>
-   
-  </ul>
- </nav>	  
-     
-     
-      
- </header>
+      </ul>
+      </nav>	  
+      </header>
+      <!-- end mobile view menu  -->
+      </section>
 
-  <!-- end mobile view menu  -->
-</section>
-
-
-
-
-
-
-
-
-<section class="banner-slider max-md:hidden">
-<div
-    id="carouselExampleCaptions2"
-    class="relative w-auto pl-24 pr-24"
-    data-te-carousel-init
-    data-te-ride="carousel">
-    <!--Carousel indicators-->
-    <div
-      class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-end p-0"
-      data-te-carousel-indicators>
-      <button
-        type="button"
-        data-te-target="#carouselExampleCaptions2"
-        data-te-slide-to="0"
-        data-te-carousel-active
-        class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-[50%] bg-[#595959] mr-[7px]"
-        aria-current="true"
-        aria-label="Slide 1"></button>
-
-
-
-      <button
-        type="button"
-        data-te-target="#carouselExampleCaptions2"
-        data-te-slide-to="1"
-        class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-[50%] bg-[#595959] mr-[7px]"
-        aria-label="Slide 2"></button>
-
-
-
-      <button
-        type="button"
-        data-te-target="#carouselExampleCaptions2"
-        data-te-slide-to="2"
-        class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-[50%] bg-[#595959] mr-[7px]"
-        aria-label="Slide 3"></button>
-    </div>
-
-
-  
-    <!--Carousel items-->
-    <div
-      class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-      <!--First item-->
-      <div
-        class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-        data-te-carousel-active
-        data-te-carousel-item
-        style="backface-visibility: hidden">
-        <img
-          src="https://futurelife.com/cdn/shop/files/FL_DESKTOP_BANNERS_10_5000x.png?v=1691744088"
-          class="block w-full"
-          alt="..." />
-        <div
-          class="absolute top-[155px] max-w-[34%] pl-[25px] pr-[25px] text-white">
-          <h5 class="text-xl tracking-[.2rem] font-bold pb-4">DON'T MISS THESE NEW MID <br> MONTH SAVINGS!</h5>
-          <p class="text-sm pb-4">
-            New exclusive mid month offers just launched. R70 double deals!
-          </p>
-          <button class="bg-white pl-4 pr-4 h-11 text-[#000000] rounded-sm">SHOP NOW</button>
-        </div>
+      <section class="banner-slider">
+      <div class="relative">
+      <!-- Slides -->
+      <div class="mySlides fade max-w-[1340px] m-auto">
+      <div class="item flex max-md:flex-col-reverse">
+      <div class="left md:w-[35%] bg-[#71A333] md:p-8 p-4 md:pt-40 text-white">
+      <h5 class="text-xl tracking-[.2rem] font-bold pb-4">DON'T MISS THESE NEW MID <br> MONTH SAVINGS!</h5>
+      <p class="text-sm pb-4">
+      New exclusive mid month offers just launched. R70 double deals!
+      </p>
+      <button class="bg-white pl-4 pr-4 h-11 text-[#000000] rounded-sm">SHOP NOW</button>
       </div>
-
-
-      <!--Second item-->
-      <div
-        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-        data-te-carousel-item
-        style="backface-visibility: hidden">
-        <img
-          src="https://futurelife.com/cdn/shop/files/1_1_25d65a9d-6f67-447c-a89e-d5e11a3bcd74_5000x.png?v=1691475487"
-          class="block w-full"
-          alt="..." />
-          <div
-          class="absolute top-[155px] max-w-[34%] pl-[25px] pr-[25px] text-white">
-          <h5 class="text-xl tracking-[.2rem] font-bold pb-4">SPOIL SOMEONE SPECIAL THIS <br> MONTH</h5>
-          <p class="text-sm pb-4">
-            Get a limited edition 3-pack of sport scrunches FREE with every order of a 28-day beauti food value pack in August!
-          </p>
-          <button class="bg-white pl-4 pr-4 h-11 text-[#000000] rounded-sm">SHOP NOW</button>
-        </div>
+      <div class="right md:w-[65%]">
+      <img src="slide-1.jpg" alt="Nature" class="w-full">
       </div>
-
-      <!--Third item-->
-      <div
-        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-        data-te-carousel-item
-        style="backface-visibility: hidden">
-        <img
-          src="https://futurelife.com/cdn/shop/files/1_875a0ae0-7f23-4c88-a307-e7dd768a6ad2_5000x.png?v=1690804501"
-          class="block w-full"
-          alt="..." />
-          <div
-          class="absolute top-[155px] max-w-[34%] pl-[25px] pr-[25px] text-white">
-          <h5 class="text-xl tracking-[.2rem] font-bold pb-4">EXCLUSIVE KIDS OFFER</h5>
-          <p class="text-sm pb-4">
-            Any 2 x kids and a free sandwich cutter R80!
-          </p>
-          <button class="bg-white pl-4 pr-4 h-11 text-[#000000] rounded-sm">SHOP NOW</button>
-        </div>
       </div>
-    </div>
-  
-    <!--Carousel controls - prev item-->
-    <button
-      class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-      type="button"
-      data-te-target="#carouselExampleCaptions"
-      data-te-slide="prev">
-      <span class=" h-8 w-8 hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="h-6 w-6">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15.75 19.5L8.25 12l7.5-7.5" />
-        </svg>
-      </span>
-      <span
-        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-        >Previous</span
-      >
-    </button>
-    <!--Carousel controls - next item-->
-    <button
-      class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-      type="button"
-      data-te-target="#carouselExampleCaptions"
-      data-te-slide="next">
-      <span class=" h-8 w-8 hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="h-6 w-6">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-        </svg>
-      </span>
-      <span
-        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-        >Next</span
-      >
-    </button>
-</div>
-</section>
-<!-- start banner slider for mobile view  -->
-<section class="banner-slider-mobile md:hidden">
-  <div
-    id="carouselExampleCaptions3"
-    class="relative w-auto md:px-24"
-    data-te-carousel-init
-    data-te-ride="carousel">
-    <!--Carousel indicators-->
-    <div
-      class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-end p-0"
-      data-te-carousel-indicators>
-      <button
-        type="button"
-        data-te-target="#carouselExampleCaptions3"
-        data-te-slide-to="0"
-        data-te-carousel-active
-        class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-[50%] bg-[#595959] mr-[7px]"
-        aria-current="true"
-        aria-label="Slide 1"></button>
-
-
-
-      <button
-        type="button"
-        data-te-target="#carouselExampleCaptions3"
-        data-te-slide-to="1"
-        class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-[50%] bg-[#595959] mr-[7px]"
-        aria-label="Slide 2"></button>
-
-
-
-      <button
-        type="button"
-        data-te-target="#carouselExampleCaptions3"
-        data-te-slide-to="2"
-        class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-[50%] bg-[#595959] mr-[7px]"
-        aria-label="Slide 3"></button>
-    </div>
-
-
-  
-    <!--Carousel items---------------------------------------------------------------------------------------------------------------------------------------->
-    <div
-      class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-      <!--First item-->
-      <div
-        class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none  max-md:flex-col-reverse max-md:flex"
-        data-te-carousel-active
-        data-te-carousel-item
-        style="backface-visibility: hidden">
-        <div
-          class=" pl-[25px] pr-[25px] text-white md:w-[35%] bg-[#71a333] max-md:p-4  p-[30px]">
-          <h5 class="text-xl tracking-[.2rem] font-bold pb-4 md:mt-[100px]">slide1</h5>
-          <p class="text-sm pb-4">
-            New exclusive mid month offers just launched. R70 double deals!
-          </p>
-          <button class="bg-white pl-4 pr-4 h-11 text-[#000000] rounded-sm">SHOP NOW</button>
-        </div>
-      
-         <div class="image md:w-[65%]">
-          <img
-          src="slide-1.jpg"
-          
-          alt="..." />
-         </div>
-       
-        
       </div>
-
-
-      <!--Second item-->
-      <div
-      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none  max-md:flex-col-reverse max-md:flex "
-      
-      data-te-carousel-item
-      style="backface-visibility: hidden">
-      <div
-        class=" pl-[25px] pr-[25px] text-white md:w-[35%] bg-[#71a333] max-md:p-4  p-[30px]">
-        <h5 class="text-xl tracking-[.2rem] font-bold pb-4 md:mt-[100px]">slide2</h5>
-        <p class="text-sm pb-4">
-          New exclusive mid month offers just launched. R70 double deals!
-        </p>
-        <button class="bg-white pl-4 pr-4 h-11 text-[#000000] rounded-sm">SHOP NOW</button>
+      <div class="mySlides fade max-w-[1340px] m-auto">
+      <div class="item flex max-md:flex-col-reverse">
+      <div class="left md:w-[35%] bg-[#71A333] md:p-8 p-4 md:pt-40 text-white">
+      <h5 class="text-xl tracking-[.2rem] font-bold pb-4">SPOIL SOMEONE SPECIAL THIS <br> MONTH</h5>
+      <p class="text-sm pb-4">
+      Get a limited edition 3-pack of sport scrunches FREE with every order of a 28-day beauti food value pack in August!
+      </p>
+      <button class="bg-white pl-4 pr-4 h-11 text-[#000000] rounded-sm">SHOP NOW</button>
       </div>
+      <div class="right md:w-[65%]">
+      <img src="slide-2.jpg" alt="Nature" class="w-full">
+      </div>
+      </div>
+      </div>
+      <div class="mySlides fade max-w-[1340px] m-auto">
+      <div class="item flex max-md:flex-col-reverse">
+      <div class="left md:w-[35%] bg-[#E0A400] md:p-8 p-4 md:pt-40 text-white">
+      <h5 class="text-xl tracking-[.2rem] font-bold pb-4">EXCLUSIVE KIDS OFFER</h5>
+      <p class="text-sm pb-4">
+      Any 2 x kids and a free sandwich cutter R80!
+      </p>
+      <button class="bg-white pl-4 pr-4 h-11 text-[#000000] rounded-sm">SHOP NOW</button>
+      </div>
+      <div class="right md:w-[65%]">
+      <img src="slider-3.jpg" alt="Nature" class="w-full">
+      </div>
+      </div>
+      </div>
+      <!-- Dots/bullets/indicators -->
+      <div class="text-center mt-4 absolute bottom-6 md:right-32 right-4">
+      <span class="dot inline-block h-[16px] w-[15px] mx-1 rounded-[50%] bg-black opacity-[.6] mr-[7px] cursor-pointer" onclick="currentSlide(1)"></span>
+      <span class="dot inline-block h-[16px] w-[15px] mx-1 rounded-[50%] bg-black opacity-[.6] mr-[7px] cursor-pointer" onclick="currentSlide(2)"></span>
+      <span class="dot inline-block h-[16px] w-[15px] mx-1 rounded-[50%] bg-black opacity-[.6] mr-[7px] cursor-pointer" onclick="currentSlide(3)"></span>
+      </div>
+      </div>
+      </section>
+
+
+    <section class="bg-gray-50 pb-6">
+      <div class="mx-auto">
+      <div class="abc md:px-[50px] px-[32px] relative">
+          <div class="product-title text-center mt-10 pb-8 text-[#595959] text-2xl font-bold uppercase">Featured Products</div>
+          <div id="keen-slider" class="keen-slider">
     
-       <div class="image md:w-[65%]">
-        <img
-        src="slide-2.jpg"
-        
-        alt="..." />
-       </div>
-     
-      
-    </div>
-
-      <!--Third item-->
-      <div
-      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none  max-md:flex-col-reverse max-md:flex  "
-      
-      data-te-carousel-item
-      style="backface-visibility: hidden">
-      <div
-        class=" pl-[25px] pr-[25px] text-white md:w-[35%] bg-[#71a333] max-md:p-4  p-[30px] inline-block">
-        <h5 class="text-xl tracking-[.2rem] font-bold pb-4 md:mt-[100px]">slide3</h5>
-        <p class="text-sm pb-4">
-          New exclusive mid month offers just launched. R70 double deals!
-        </p>
-        <button class="bg-white pl-4 pr-4 h-11 text-[#000000] rounded-sm">SHOP NOW</button>
-      </div>
+            <div class="keen-slider__slide">
+              <img src="https://futurelife.com/cdn/shop/files/FLAUGOFFERWOMENSMONTHOFFER_5000x.png?v=1690861427" alt="">
     
-       <div class="image md:w-[65%] inline-block">
-        <img
-        src="slide-1.jpg"
-        
-        alt="..." />
-       </div>
-     
-      
-    </div>
-
-    </div>
-  
-    <!--Carousel controls - prev item-->
-    <button
-      class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-      type="button"
-      data-te-target="#carouselExampleCaptions3"
-      data-te-slide="prev">
-      <span class=" h-8 w-8 hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="h-6 w-6">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15.75 19.5L8.25 12l7.5-7.5" />
-        </svg>
-      </span>
-      <span
-        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-        >Previous</span
-      >
-    </button>
-    <!--Carousel controls - next item-->
-    <button
-      class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-      type="button"
-      data-te-target="#carouselExampleCaptions3"
-      data-te-slide="next">
-      <span class=" h-8 w-8 hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="h-6 w-6">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-        </svg>
-      </span>
-      <span
-        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-        >Next</span
-      >
-    </button>
-  </div>
-
-</section>
-<!-- end banner slider for mobile view -->
-
-  <section class="product-slider">
-    <div class="product-title text-center mt-10 pb-8 text-[#595959] text-2xl font-bold uppercase">Featured Products</div>
-    <div class="flex items-center justify-center w-full h-full px-[32px] sm:px-[50px] pb-10">
-        <div class="w-full relative flex items-center justify-center">
-            <button aria-label="slide backward" class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
-                <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </button>
-            <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
-                <div id="slider" class="h-full flex lg:gap-5 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
-                    <div class="flex-shrink-0 relative sm:w-[25%]">
-                        <img src="https://futurelife.com/cdn/shop/files/FLAUGOFFERWOMENSMONTHOFFER_5000x.png?v=1690861427" alt="black chair and white table" class="object-cover object-center w-96" />
-                        <!-- <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 1</h2>
-                            <div class="flex h-full items-end ">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Minimal Interior</h3>
-                            </div>
-                        </div> -->
-                        <div class="text-center py-2">Women's Month Bundle</div>
-                        <div class="text-center text-[13px]">R 280.00</div>
-                       
-                    </div>
-                   
-                   
-
-
-                    <div class="flex-shrink-0 relative sm:w-[25%]">
-                        <img src="https://futurelife.com/cdn/shop/files/FLAUGOFFERENERGIZE_0681da47-0d5e-46d3-b7aa-eb832a16d0c7_5000x.png?v=1690795998" alt="sitting area" class="object-cover object-center w-96" />
-                        <!-- <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
-                            </div>
-                        </div> -->
-                        <div class="text-center py-2">Energize x2</div>
-                       <div class="text-center">R 200.00</div>
-                    </div>
-                    
-
-
-
-                    <div class="flex-shrink-0 relative sm:w-[25%]">
-                        <img src="https://futurelife.com/cdn/shop/files/FLAUGOFFERSMARTFOOD_5000x.png?v=1690795368" alt="sitting area" class="object-cover object-center w-96" />
-                        <!-- <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
-                            </div>
-                        </div> -->
-                        <div class="text-center py-2">Smart Food 750g x4</div>
-                    <div class="text-center">R 200.00</div>
-                    </div>
-                   
-
-
-
-                    <div class="flex-shrink-0 relative sm:w-[25%]">
-                        <img src="https://futurelife.com/cdn/shop/products/Zero_Original_5000x_09fc1cc0-c4c1-4c64-b57c-3656d744c97f_5000x.png?v=1691150259" alt="sitting area" class="object-cover object-center w-96" />
-                        <!-- <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
-                            </div>
-                        </div> -->
-                        <div class="text-center py-2">Smart food™ Zero</div>
-                    <div class="text-center">R 39.99</div>
-                    </div>
-
-
-                    <div class=" flex-shrink-0 relative sm:w-[25%]">
-                        <img src="https://futurelife.com/cdn/shop/files/FLAUGOFFERKIDS_5000x.png?v=1690795669" alt="black chair and white table" class="object-cover object-center w-96" />
-                        <!-- <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
-                            </div>
-                        </div> -->
-                        <div class="text-center py-2"> Kids x2 + Free Sandwich Cutter</div>
-                        <div class="text-center">R 80.00</div>
-                    </div>
-
-                    <div class="flex-shrink-0 relative sm:w-[25%]">
-                        <img src="https://futurelife.com/cdn/shop/files/FLAUGOFFERHIGHPROTEIN_5000x.png?v=1690796406" alt="sitting area" class="object-cover object-center w-96" />
-                        <!-- <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
-                            </div>
-                        </div> -->
-                        <div class="text-center py-2">High Protein 500g & High Protein Bar <br> Multipack</div>
-                        <div class="text-center"></div>
-                    </div>
-
-                    <div class="flex-shrink-0 relative sm:w-[25%]">
-                        <img src="https://futurelife.com/cdn/shop/files/FLAUGOFFERCLASSICOATS_5000x.png?v=1690798711" alt="sitting area" class="object-cover object-center w-96" />
-                        <!-- <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
-                            </div>
-                        </div> -->
-                        <div class="text-center py-2"> Classic Oats Bundle</div>
-                        <div class="text-center">R 70.00</div>
-                    </div>
-
-                    <div class="flex-shrink-0 relative sm:w-[25%]">
-                      <img src="https://futurelife.com/cdn/shop/files/FLJUNEIMMUNESUPPORTBUNDLE_5000x.png?v=1685977545" alt="sitting area" class="object-cover object-center w-96" />
-                      <!-- <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                          <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
-                          <div class="flex h-full items-end pb-6">
-                              <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
-                          </div>
-                      </div> -->
-                      <div class="text-center py-2">Immune Support Bundle</div>
-                        <div class="text-center">R 200.00</div>
-                  </div>
-                 
-                  
-
-
-
-                </div>
+              <div class="text-center py-2">Women's Month Bundle</div>
+              <div class="text-center text-[13px]">R 280.00</div>
             </div>
-            <button aria-label="slide forward" class="absolute z-30 right-0 mr-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" id="next">
-                <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </button>
+            <div class="keen-slider__slide">
+             <img src="https://futurelife.com/cdn/shop/files/FLAUGOFFERENERGIZE_0681da47-0d5e-46d3-b7aa-eb832a16d0c7_5000x.png?v=1690795998" alt="">
+             <div class="text-center py-2">Energize x2</div>
+             <div class="text-center">R 200.00</div>
+           </div>
+           <div class="keen-slider__slide">
+             <img src="https://futurelife.com/cdn/shop/files/FLAUGOFFERSMARTFOOD_5000x.png?v=1690795368" alt="">
+             <div class="text-center py-2">Smart Food 750g x4</div>
+          <div class="text-center">R 200.00</div>
+           </div>
+           <div class="keen-slider__slide">
+             <img src="https://futurelife.com/cdn/shop/products/Zero_Original_5000x_09fc1cc0-c4c1-4c64-b57c-3656d744c97f_5000x.png?v=1691150259" alt="">
+             <div class="text-center py-2"> Smart food™ Zero</div>
+          <div class="text-center">R 39.99</div>
+           </div>
+     </div>
+    
+     <div class="items-end justify-between sm:flex sm:pe-6 lg:pe-8">
+         
+    
+       <div class="mt-8 flex gap-4 lg:mt-0">
+         <button
+           aria-label="Previous slide"
+           id="keen-slider-previous"
+           class="absolute top-[43%]"
+         >
+           <svg
+             xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewBox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             class="h-5 w-5 rtl:rotate-180"
+           >
+             <path
+               stroke-linecap="round"
+               stroke-linejoin="round"
+               d="M15.75 19.5L8.25 12l7.5-7.5"
+             />
+           </svg>
+         </button>
+    
+         <button
+           aria-label="Next slide"
+           id="keen-slider-next"
+           class="absolute top-[43%] right-[50px]"
+         >
+           <svg
+             class="h-5 w-5 rtl:rotate-180"
+             fill="none"
+             stroke="currentColor"
+             viewBox="0 0 24 24"
+             xmlns="http://www.w3.org/2000/svg"
+           >
+             <path
+               d="M9 5l7 7-7 7"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+               stroke-width="2"
+             />
+           </svg>
+         </button>
+       </div>
+     </div>
+    
+    
         </div>
-    </div>
-  
- </section>
-
- <section class="vide0">
-
-
-      <header
-  class="relative flex items-center justify-center h-screen  overflow-hidden  max-md:h-[180px]"
->
-
-  <!-- <div
-    class="relative z-30 p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl"
-  >
-    Welcome to my site!
-  </div> -->
-  <video
-    autoplay
-    loop
-    muted
-    class="absolute z-[5] w-full"
-  >
-    <source
-      src="FUTURELIFE India.mp4"
-      type="video/mp4"
-    />
-    Your browser does not support the video tag.
-  </video>
-</header>
- </section>
-
- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
-<div class="testimonial-heading text-center py-8 px-[16px] text-xl font-extrabold text-[#595959]">
-  WHAT OUR CUSTOMERS SAY ABOUT US
-</div>
-<section class=" testimonial bg-[#f7f7f7] max-w-[1300px] m-auto relative">
-  <div class="">
-    <div class="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8">
+      </div>
+    </section>
+    
+   <section class="vide0">
+      <header class="relative flex items-center justify-center h-screen  overflow-hidden  max-md:h-[180px]">
      
-
-      <div class="mt-8 flex gap-4 lg:mt-0">
-        <button
-          class="prev-button   text-pink-600 absolute top-[89px] z-40 "
-        >
-          <span class="sr-only">Previous Slide</span>
-          <svg
-          class="w-10"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="h-5 w-5 rtl:rotate-180"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15.75 19.5L8.25 12l7.5-7.5"
-            />
-          </svg>
-        </button>
-
-        <button
-          class="next-button text-pink-600   absolute right-0 z-40 top-[89px]"
-        >
-          <span class="sr-only">Next Slide</span>
-          <svg
-            class="w-10 rtl:rotate-180"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M9 5l7 7-7 7"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <div class="-mx-6  lg:col-span-2 lg:mx-8 py-12 max-md:px-[46px]">
-      <div class="swiper-container !overflow-hidden">
-        <div class="swiper-wrapper">
-		
-          <div class="swiper-slide">
-            <blockquote
-              class="flex h-full flex-col justify-between  px-3"
-            >
-              <div>
-                <div class="flex gap-0.5 text-white">
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                </div>
-
-                <div class="mt-4">
-                  <h3 class=" font-bold">
-                    High energy bar Choc Strawberry
-                  </h3>
-
-                  <p class="">
-                    Very tasty energy bar. Love it!
-                  </p>
-                </div>
-              </div>
-
-              <!-- <footer class="mt-8 text-gray-500">- Eddie Murphy</footer> -->
-            </blockquote>
-          </div>
-		        <div class="swiper-slide">
-            <blockquote
-              class="flex h-full flex-col justify-between  px-3"
-            >
-              <div>
-                <div class="flex gap-0.5 text-white">
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                </div>
-
-                <div class="mt-4">
-                  <h3 class=" font-bold">
-                    High energy bar Choc Strawberry
-                  </h3>
-
-                  <p class="">
-                    Very tasty energy bar. Love it!
-                  </p>
-                </div>
-              </div>
-
-              <!-- <footer class="mt-8 text-gray-500">- Eddie Murphy</footer> -->
-            </blockquote>
-          </div>
-		        <div class="swiper-slide">
-            <blockquote
-              class="flex h-full flex-col justify-between px-3"
-            >
-              <div>
-                <div class="flex gap-0.5 text-white">
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                </div>
-
-                <div class="mt-4">
-                  <h3 class=" font-bold">
-                    High energy bar Choc Strawberry
-                  </h3>
-
-                  <p class="">
-                    Very tasty energy bar. Love it!
-                  </p>
-                </div>
-              </div>
-
-              <!-- <footer class="mt-8 text-gray-500">- Eddie Murphy</footer> -->
-            </blockquote>
-          </div>
-		        <div class="swiper-slide">
-            <blockquote
-              class="flex h-full flex-col justify-between  px-3"
-            >
-              <div>
-                <div class="flex gap-0.5 text-white">
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                </div>
-
-                <div class="mt-4">
-                  <h3 class=" font-bold">
-                    High energy bar Choc Strawberry
-                  </h3>
-
-                  <p class="">
-                    Very tasty energy bar. Love it!
-                  </p>
-                </div>
-              </div>
-
-              <!-- <footer class="mt-8 text-gray-500">- Eddie Murphy</footer> -->
-            </blockquote>
-          </div>
-		        <div class="swiper-slide">
-            <blockquote
-              class="flex h-full flex-col justify-between  px-3"
-            >
-              <div>
-                <div class="flex gap-0.5 text-white">
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="bg-green-500 p-0.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </span>
-                </div>
-
-                <div class="mt-4">
-                  <h3 class=" font-bold">
-                    High energy bar Choc Strawberry
-                  </h3>
-
-                  <p class="">
-                    Very tasty energy bar. Love it!
-                  </p>
-                </div>
-              </div>
-
-              <!-- <footer class="mt-8 text-gray-500">- Eddie Murphy</footer> -->
-            </blockquote>
-          </div>
-        
-		  
+      <video
+         autoplay
+         loop
+         muted
+         class="absolute z-[5] w-full"
+         >
+      <source
+         src="FUTURELIFE India.mp4"
+         type="video/mp4"
+         />
+      Your browser does not support the video tag.
+      </video>
+      <a href=""><button class="z-20 uppercase tracking-[1px] text-[14px] border-2 px-4 leading-[41px] text-[white] absolute bottom-[30px]">Watch now</button> </a>
+      
+      </header>
+      </section>
 
 
+      
+      <section class="testimonial bg-[#f7f7f7]">
 
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.swiper-container', {
-      loop: true,
-      slidesPerView: 10,
-      spaceBetween: 32,
-      autoplay: {
-        delay: 8000,
-      },
-      navigation: {
-        nextEl: '.next-button',
-        prevEl: '.prev-button',
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 1.5,
-          centeredSlides: true,
-        },
-        1024: {
-          centeredSlides: false,
-          slidesPerView: 4,
-        },
-      },
-    })
-  })
-</script> -->
-
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-  const swiper = new Swiper('.swiper-container', {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 32,
-    autoplay: {
-      delay: 8000,
-    },
-    navigation: {
-      nextEl: '.next-button',
-      prevEl: '.prev-button',
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 1, // Show 1 item below 768px
-        centeredSlides: true, // Optionally center the item
-      },
-      1024: {
-        centeredSlides: false,
-        slidesPerView: 4,
-      },
-    },
-  });
-});
-
-</script>
-
-<section>
-<h1 class="font-bold text-[#595959] text-2xl uppercase text-center pb-4">SMART CENTRE</h1>
-<div class="grid grid-cols-2  md:grid-cols-4 gap-4  md:px-24 px-4 max-w-[1300px] mx-auto">
-
-  <div class="sm:col-span-2 sm:row-span-2">
-    <img src="https://futurelife.com/cdn/shop/files/Healthy_Breakfast_Smoothie_5000x_fe41c2fc-08de-4074-95b8-72f63080c941_5000x.png?v=1663691395" alt="" class="md:h-[93%] h-[150px] w-full object-cover">
-    <h4 class="bg-[#71a333] p-3 text-white text-center">RECIPES</h4>
+         <div class="wraper  w-4/5 m-auto mb-10">
+            <div class="product-title text-center mt-10 pb-8 text-[#595959] text-2xl font-bold uppercase">WHAT OUR CUSTOMERS SAY ABOUT US</div>
+            <div class="mx-auto">
+            <div class="md:px-[50px] px-[32px] relative">
+               
+                <div id="keen-slider1" class="keen-slider">
+          
+                  <div class="keen-slider__slide">
+                     <div class="item__review h-[53%]">
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+           
+            <div class="review-content">
+               <div class="review-title font-bold">Delicious</div>
+               <div>
+                  <p class="text-[15px]">A firm favourite in my home.  it has just became expensive.  Your specials help alot</p>
+               </div>
+            </div>
+           
+         </div>
+         <div class="reviewer-name-wrapper h-[150px]">
+            <div class="reviewer-name font-semibold"> Jill Stoffels </div>
+            <a class="jdgm-carousel-item__product jdgm-ellipsis" href="">
+               <div class="product-title text-[14px]"> Crunch Granola Bars - Real Berries Multipack </div>
+            </a>
+            <div class="timestamp text-[14px]">09/01/2023</div>
+         </div>
+                  </div>
+                  <div class="keen-slider__slide">
+                     <div class="item__review h-[53%]">
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+           
+            <div class="review-content">
+               <div class="review-title font-bold">Various items</div>
+               <div>
+                  <p class="text-[15px]">A firm favourite in my home.  it has just became expensive.  Your specials help alot</p>
+               </div>
+            </div>
+           
+         </div>
+         <div class="reviewer-name-wrapper h-[150px]">
+            <div class="reviewer-name font-semibold"> PREGGIE GOUNDEN  </div>
+            <a class="jdgm-carousel-item__product jdgm-ellipsis" href="">
+               <div class="product-title text-[14px]"> FUTURELIFE® Instant Oats - Classic </div>
+            </a>
+            <div class="timestamp text-[14px]">09/04/2023</div>
+         </div>
+                  </div>
+                  <div class="keen-slider__slide">
+                     <div class="item__review h-[53%]">
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+           
+            <div class="review-content">
+               <div class="review-title font-bold">High Protein Shake</div>
+               <div>
+                  <p class="text-[15px]">A firm favourite in my home.  it has just became expensive.  Your specials help alot</p>
+               </div>
+            </div>
+           
+         </div>
+         <div class="reviewer-name-wrapper h-[150px]">
+            <div class="reviewer-name font-semibold"> Kevin Govender   </div>
+            <a class="jdgm-carousel-item__product jdgm-ellipsis" href="">
+               <div class="product-title text-[14px]"> High Protein Shake </div>
+            </a>
+            <div class="timestamp text-[14px]">09/04/2023</div>
+         </div>
+                  </div>
+                  <div class="keen-slider__slide">
+                     <div class="item__review h-[53%]">
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+           
+            <div class="review-content">
+               <div class="review-title font-bold">Smart Food Original.</div>
+               <div>
+                  <p>A firm favourite in my home.  it has just became expensive.  Your specials help alot</p>
+               </div>
+            </div>
+           
+         </div>
+         <div class="reviewer-name-wrapper h-[150px]">
+            <div class="reviewer-name font-semibold"> Lisa spencer  </div>
+            <a class="jdgm-carousel-item__product jdgm-ellipsis" href="">
+               <div class="product-title text-[14px]"> Smart food™ Original  </div>
+            </a>
+            <div class="timestamp text-[14px]">09/04/2023</div>
+         </div>
+                  </div>
+                  <div class="keen-slider__slide">
+                     <div class="item__review h-[53%]">
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+           
+            <div class="review-content">
+               <div class="review-title font-bold">Smart oats bar Bundle  review</div>
+               <div>
+                  <p class="text-[15px]">A firm favourite in my home.  it has just became expensive.  Your specials help alot</p>
+               </div>
+            </div>
+           
+         </div>
+         <div class="reviewer-name-wrapper h-[150px]">
+            <div class="reviewer-name font-semibold"> Tamia Luthuli </div>
+            <a class="jdgm-carousel-item__product jdgm-ellipsis" href="">
+               <div class="product-title text-[14px]"> Smart Oats Bar Bundle  </div>
+            </a>
+            <div class="timestamp text-[14px]">09/04/2023</div>
+         </div>
+                  </div>
+                  <div class="keen-slider__slide">
+                     <div class="item__review h-[53%]">
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+                        <ion-icon name="star" class="text-[#71a332]"></ion-icon>
+           
+            <div class="review-content">
+               <div class="review-title font-bold">Most convenient food ever!</div>
+               <div>
+                  <p class="text-[15px]">A firm favourite in my home.  it has just became expensive.  Your specials help alot</p>
+               </div>
+            </div>
+           
+         </div>
+         <div class="reviewer-name-wrapper h-[150px]">
+            <div class="reviewer-name font-semibold"> Kate Wilson </div>
+            <a class="jdgm-carousel-item__product jdgm-ellipsis" href="">
+               <div class="product-title text-[14px]"> Smart Oats Bar Bundle  </div>
+            </a>
+            <div class="timestamp text-[14px]">09/04/2023</div>
+         </div>
+                  </div>
    
-  </div>
-  
+        </div>
+          
+           <div class="items-end justify-between sm:flex sm:pe-6 lg:pe-8">
+               
+          <div class="mt-8 flex gap-4 lg:mt-0">
+               <button
+                 aria-label="Previous slide"
+                 id="keen-slider-previous1"
+                 class="absolute top-[33%] left-0"
+               >
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke-width="1.5"
+                   stroke="currentColor"
+                   class="h-9 w-9 rtl:rotate-180 text-[#e4e4e4]"
+                 >
+                   <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     d="M15.75 19.5L8.25 12l7.5-7.5"
+                   />
+                 </svg>
+               </button>
+          
+               <button
+                 aria-label="Next slide"
+                 id="keen-slider-next1"
+                 class="absolute top-[33%] right-0"
+               >
+                 <svg
+                   class="h-9 w-9 rtl:rotate-180 text-[#e4e4e4]"
+                   fill="none"
+                   stroke="currentColor"
+                   viewBox="0 0 24 24"
+                   xmlns="http://www.w3.org/2000/svg"
+                 >
+                   <path
+                     d="M9 5l7 7-7 7"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     stroke-width="2"
+                   />
+                 </svg>
+               </button>
+             </div>
+           </div>
+          
+          
+              </div>
+            </div>
+         </div>
+        
+       </section>
+     
+      <section class="smart-centre md:px-12 p-[10px]">
+      <h1 class="font-bold text-[#595959] text-2xl uppercase text-center pb-4">SMART CENTRE</h1>
+      <div class="grid grid-cols-2  md:grid-cols-4 gap-4 max-w-[1200px] mx-auto">
+      <div class="sm:col-span-2 sm:row-span-2">
+      <img src="https://futurelife.com/cdn/shop/files/Healthy_Breakfast_Smoothie_5000x_fe41c2fc-08de-4074-95b8-72f63080c941_5000x.png?v=1663691395" alt="" class="md:h-[93%] h-[150px] w-full object-cover">
+      <h4 class="bg-[#71a333] p-3 text-white text-center">RECIPES</h4>
+      </div>
+      <div class=" sm:col-span-2">
+      <img src="https://futurelife.com/cdn/shop/files/SMARTFOOD_5000x.png?v=1633503858" alt="" class="md:h-auto  h-[150px] w-full object-cover">
+      <h4 class="bg-[#71a333] p-3 text-white text-center">THE SCIENCE</h4>
+      </div>
+      <div class="sm:col-start-3">
+      <img src="https://futurelife.com/cdn/shop/files/dietitian_5000x.png?v=1633442370" alt="" class="md:h-auto  h-[150px] w-full object-cover">
+      <h4 class="bg-[#71a333] p-3 text-white text-center">MEET OUR DIETITIANS</h4>
+      </div>
+      <div class=" sm:col-start-4">
+      <img src="https://futurelife.com/cdn/shop/files/Untitled_design_25_5000x.png?v=1662042828" alt="" class="md:h-auto  h-[150px] w-full object-cover">
+      <h4 class="bg-[#71a333] p-3 text-white text-center">NUTRITION GUIDES</h4>
+      </div>
+      </div>
+      </section>
 
-  <div class=" sm:col-span-2">
-    <img src="https://futurelife.com/cdn/shop/files/SMARTFOOD_5000x.png?v=1633503858" alt="" class="md:h-auto  h-[150px] w-full object-cover">
-    <h4 class="bg-[#71a333] p-3 text-white text-center">THE SCIENCE</h4>
-    
-  </div>
-  <div class="sm:col-start-3">
-    <img src="https://futurelife.com/cdn/shop/files/dietitian_5000x.png?v=1633442370" alt="" class="md:h-auto  h-[150px] w-full object-cover">
-    <h4 class="bg-[#71a333] p-3 text-white text-center">MEET OUR DIETITIANS</h4>
-    
-  </div>
-  <div class=" sm:col-start-4">
-    <img src="https://futurelife.com/cdn/shop/files/Untitled_design_25_5000x.png?v=1662042828" alt="" class="md:h-auto  h-[150px] w-full object-cover">
-    <h4 class="bg-[#71a333] p-3 text-white text-center">NUTRITION GUIDES</h4>
-    
-  </div>
-</div>
-
-</section>
-
-
-<section>
-  <div class="Futurelife-App max-w-[1200px] py-[72px] px-[32px] m-auto">
-    <img src="https://cdn.shopify.com/s/files/1/0569/3014/0312/files/BANNER_IMAGE.png?v=1682079293" alt="" class="md:max-w-[500px] m-auto">
-
-    <div>
+      <section>
+      <div class="Futurelife-App max-w-[1200px] py-[72px] px-[32px] m-auto">
+      <img src="https://cdn.shopify.com/s/files/1/0569/3014/0312/files/BANNER_IMAGE.png?v=1682079293" alt="" class="md:max-w-[500px] m-auto">
+      <div>
       <h3 class="text-[#81c341] md:text-5xl text-2xl  text-center font-bold md:leading-[48px] leading-8 md:pb-6 pb-8">WE'VE JUST LAUNCHED <br>OUR FUTURELIFE® APP</h3>
-    </div>
-
-    <div class="btn flex max-md:flex-col m-auto justify-center gap-5 ">
+      </div>
+      <div class="btn flex max-md:flex-col m-auto justify-center gap-5 ">
       <button class="p-4 bg-[#E77A39] text-white">DOWNLOAD FOR IOS</button>
       <button class="p-4 bg-[#E77A39] text-white">DOWNLOAD FOR ANDROID</button>
-    </div>
+      </div>
+      </div>
+      </section>
 
-  </div>
-</section>
-
-<!-- test -->
-
-
-<!--  -->
-
-
-
-
-<section class=" pt-12 pl-0 pr-0 text-[#595959] relative ">
-  <img id="footer-background-image" src="https://cdn.shopify.com/s/files/1/0569/3014/0312/files/FooterBanner.png?v=1631460429" class="absolute left-0 top-0 right-0 z-[-1] max-md:hidden">
-
-<footer class=" relative md:mt-44 pt-10 pb-10 bg-[#e7e9ee]">
-<div class="sm:flex z-[1] relative md:px-12">
-  <div class="about md:w-[20%] text-center max-md:pb-8">
-
-    <div class="text-wraper py-0 px-[83px] md:text-left">
-    <p>FUTURELIFE®</p>
-        <ul>
-         <li>© 2021</li>
-          <li><a href="" title="PRIVACY POLICY">PRIVACY POLICY</a></li>
-          <a href="">DISCLAIMER</a>
-        </ul>
-
-      
-        <div class="footer--social-icons flex justify-center gap-3 pt-4">
-          <a href="">
-            <svg class="icon--root icon--facebook h-4" viewBox="0 0 20 20">
-              <path d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z" fill-rule="evenodd"></path>
-            </svg>
-          </a>
-        
-        
-        <a href=""> 
-           <svg class="icon--root icon--twitter h-4" viewBox="0 0 22 20">
-          <path d="M1.533 1.745s3.376 4.547 9.245 4.861c0 0-.795-2.686 1.642-4.74 2.437-2.057 5.45-.314 6.028.46 0 0 1.714-.272 2.911-1.09 0 0-.39 1.57-1.836 2.516 0 0 1.693-.23 2.477-.691 0 0-.826 1.343-2.25 2.37 0 0 .599 5.674-4.203 10.362C10.747 20.481 2.85 19.506 0 17.051c0 0 3.871.442 6.597-1.918 0 0-3.221-.064-4.15-3.116 0 0 1.61.127 1.89-.188 0 0-3.47-.849-3.5-4.532 0 0 1.052.536 2.013.568 0 0-3.346-2.455-1.317-6.12" fill-rule="evenodd"></path>
-        </svg>
-        </a>
-        <a href="">
-          <svg class="icon--root icon--instagram h-4" viewBox="0 0 20 20">
-            <path d="M15.33 5.87a1.208 1.208 0 01-1.2-1.197 1.215 1.215 0 011.207-1.212c.649.002 1.198.55 1.202 1.2.005.659-.547 1.21-1.21 1.209zm-5.332 9.273c-2.828 0-5.128-2.297-5.14-5.134-.013-2.83 2.31-5.148 5.148-5.138a5.126 5.126 0 015.124 5.137 5.14 5.14 0 01-5.133 5.135zm-.01-1.808a3.343 3.343 0 003.342-3.324 3.348 3.348 0 00-3.325-3.34 3.343 3.343 0 00-3.34 3.324 3.34 3.34 0 003.324 3.34zM1.787 9.997h.038c0 1.052-.018 2.104.007 3.154.015.652.048 1.311.16 1.953.259 1.484 1.12 2.454 2.597 2.845.737.195 1.492.215 2.243.222 2.11.016 4.219.017 6.328-.002a11.723 11.723 0 001.952-.162c1.483-.265 2.451-1.13 2.834-2.61.214-.821.218-1.663.225-2.5.018-1.931.02-3.863-.002-5.793-.008-.725-.042-1.458-.16-2.171-.25-1.502-1.116-2.488-2.614-2.878-.82-.213-1.663-.218-2.5-.225-1.93-.018-3.861-.02-5.793.002-.724.008-1.456.047-2.17.16-1.4.224-2.388 1-2.81 2.382a6.122 6.122 0 00-.247 1.519c-.056 1.367-.062 2.736-.088 4.104zM20 7.143v5.715c-.01.104-.024.208-.031.313-.044.658-.056 1.32-.137 1.975-.117.95-.44 1.833-1.019 2.607-1.072 1.433-2.57 2.03-4.296 2.164-.446.035-.895.055-1.343.083H6.786c-.092-.01-.183-.028-.274-.034-.473-.03-.95-.04-1.421-.092-1.032-.114-1.998-.424-2.84-1.051C.812 17.748.215 16.247.084 14.514c-.033-.419-.056-.84-.083-1.26V6.746c.014-.157.025-.314.04-.47.067-.63.08-1.27.21-1.887C.638 2.56 1.686 1.245 3.44.532c.932-.379 1.919-.46 2.913-.49.263-.008.526-.028.79-.042h5.714c.09.01.183.024.274.03.671.045 1.347.054 2.014.14 1.044.133 2.002.507 2.823 1.191 1.31 1.094 1.833 2.555 1.948 4.202.037.526.056 1.053.084 1.58z" fill-rule="evenodd"></path>
-          </svg>
-        </a>
-
-        <a href="">
-          <svg class="icon--root icon--youtube h-4" viewBox="0 0 29 20">
-            <path d="M28.166 3.123c.596 2.228.596 6.877.596 6.877s0 4.649-.596 6.877a3.577 3.577 0 01-2.522 2.526C23.419 20 14.5 20 14.5 20s-8.92 0-11.145-.597a3.575 3.575 0 01-2.521-2.526C.238 14.649.238 10 .238 10s0-4.649.596-6.877A3.574 3.574 0 013.355.597C5.58 0 14.5 0 14.5 0s8.92 0 11.144.597a3.576 3.576 0 012.522 2.526zM11.583 14.221L19.038 10l-7.455-4.221v8.442z" fill-rule="evenodd"></path>
-          </svg>
-        </a>
-
-
-
-        </div>
-       
-    </div>
-  </div>
-
-
+      <section class=" pt-12 pl-0 pr-0 text-[#595959] relative ">
+      <img id="footer-background-image" src="https://cdn.shopify.com/s/files/1/0569/3014/0312/files/FooterBanner.png?v=1631460429" class="absolute left-0 top-0 right-0 z-[-1] max-md:hidden">
+      <footer class=" relative md:mt-44 pt-10 pb-10 bg-[#e7e9ee]">
+      <div class="sm:flex z-[1] relative md:px-12">
+      <div class="about md:w-[20%] text-center max-md:pb-8">
+      <div class="text-wraper py-0 px-[83px] md:text-left">
+      <p>FUTURELIFE®</p>
+      <ul>
+      <li>© 2021</li>
+      <li><a href="" title="PRIVACY POLICY">PRIVACY POLICY</a></li>
+      <a href="">DISCLAIMER</a>
+      </ul>
+      <div class="footer--social-icons flex justify-center gap-3 pt-4">
+      <a href="">
+      <svg class="icon--root icon--facebook h-4" viewBox="0 0 20 20">
+      <path d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z" fill-rule="evenodd"></path>
+      </svg>
+      </a>
+      <a href=""> 
+      <svg class="icon--root icon--twitter h-4" viewBox="0 0 22 20">
+      <path d="M1.533 1.745s3.376 4.547 9.245 4.861c0 0-.795-2.686 1.642-4.74 2.437-2.057 5.45-.314 6.028.46 0 0 1.714-.272 2.911-1.09 0 0-.39 1.57-1.836 2.516 0 0 1.693-.23 2.477-.691 0 0-.826 1.343-2.25 2.37 0 0 .599 5.674-4.203 10.362C10.747 20.481 2.85 19.506 0 17.051c0 0 3.871.442 6.597-1.918 0 0-3.221-.064-4.15-3.116 0 0 1.61.127 1.89-.188 0 0-3.47-.849-3.5-4.532 0 0 1.052.536 2.013.568 0 0-3.346-2.455-1.317-6.12" fill-rule="evenodd"></path>
+      </svg>
+      </a>
+      <a href="">
+      <svg class="icon--root icon--instagram h-4" viewBox="0 0 20 20">
+      <path d="M15.33 5.87a1.208 1.208 0 01-1.2-1.197 1.215 1.215 0 011.207-1.212c.649.002 1.198.55 1.202 1.2.005.659-.547 1.21-1.21 1.209zm-5.332 9.273c-2.828 0-5.128-2.297-5.14-5.134-.013-2.83 2.31-5.148 5.148-5.138a5.126 5.126 0 015.124 5.137 5.14 5.14 0 01-5.133 5.135zm-.01-1.808a3.343 3.343 0 003.342-3.324 3.348 3.348 0 00-3.325-3.34 3.343 3.343 0 00-3.34 3.324 3.34 3.34 0 003.324 3.34zM1.787 9.997h.038c0 1.052-.018 2.104.007 3.154.015.652.048 1.311.16 1.953.259 1.484 1.12 2.454 2.597 2.845.737.195 1.492.215 2.243.222 2.11.016 4.219.017 6.328-.002a11.723 11.723 0 001.952-.162c1.483-.265 2.451-1.13 2.834-2.61.214-.821.218-1.663.225-2.5.018-1.931.02-3.863-.002-5.793-.008-.725-.042-1.458-.16-2.171-.25-1.502-1.116-2.488-2.614-2.878-.82-.213-1.663-.218-2.5-.225-1.93-.018-3.861-.02-5.793.002-.724.008-1.456.047-2.17.16-1.4.224-2.388 1-2.81 2.382a6.122 6.122 0 00-.247 1.519c-.056 1.367-.062 2.736-.088 4.104zM20 7.143v5.715c-.01.104-.024.208-.031.313-.044.658-.056 1.32-.137 1.975-.117.95-.44 1.833-1.019 2.607-1.072 1.433-2.57 2.03-4.296 2.164-.446.035-.895.055-1.343.083H6.786c-.092-.01-.183-.028-.274-.034-.473-.03-.95-.04-1.421-.092-1.032-.114-1.998-.424-2.84-1.051C.812 17.748.215 16.247.084 14.514c-.033-.419-.056-.84-.083-1.26V6.746c.014-.157.025-.314.04-.47.067-.63.08-1.27.21-1.887C.638 2.56 1.686 1.245 3.44.532c.932-.379 1.919-.46 2.913-.49.263-.008.526-.028.79-.042h5.714c.09.01.183.024.274.03.671.045 1.347.054 2.014.14 1.044.133 2.002.507 2.823 1.191 1.31 1.094 1.833 2.555 1.948 4.202.037.526.056 1.053.084 1.58z" fill-rule="evenodd"></path>
+      </svg>
+      </a>
+      <a href="">
+      <svg class="icon--root icon--youtube h-4" viewBox="0 0 29 20">
+      <path d="M28.166 3.123c.596 2.228.596 6.877.596 6.877s0 4.649-.596 6.877a3.577 3.577 0 01-2.522 2.526C23.419 20 14.5 20 14.5 20s-8.92 0-11.145-.597a3.575 3.575 0 01-2.521-2.526C.238 14.649.238 10 .238 10s0-4.649.596-6.877A3.574 3.574 0 013.355.597C5.58 0 14.5 0 14.5 0s8.92 0 11.144.597a3.576 3.576 0 012.522 2.526zM11.583 14.221L19.038 10l-7.455-4.221v8.442z" fill-rule="evenodd"></path>
+      </svg>
+      </a>
+      </div>
+      </div>
+      </div>
       <div class="our-company md:w-[20%] text-center max-md:pb-8">
-        <div class="text-wraper py-0 px-[72px] md:text-left">
-        <h1 class="pb-4 font-bold"> OUR COMPANY</h1>
-        <ul>
-          <li><a href="">ABOUT US</a></li>
-          <li><a href=""> OUR PARTNERS</a></li>
-          <li><a href="">FEED THE FUTURE</a></li>
-          <li><a href="">NAPPI CODE</a></li>
-          
-    
-        </ul>
+      <div class="text-wraper py-0 px-[72px] md:text-left">
+      <h1 class="pb-4 font-bold"> OUR COMPANY</h1>
+      <ul>
+      <li><a href="">ABOUT US</a></li>
+      <li><a href=""> OUR PARTNERS</a></li>
+      <li><a href="">FEED THE FUTURE</a></li>
+      <li><a href="">NAPPI CODE</a></li>
+      </ul>
       </div>
       </div>
-    
       <div class="CUSTOMER EXPERIENCE md:w-[20%] text-center max-md:pb-8">
-        <div class="text-wraper py-0 px-[48px] md:text-left">
-        <h1 class="pb-4 font-bold">CUSTOMER EXPERIENCE</h1>
-    
-        <ul>
-          <li><a href="" title="FAQ">FAQ</a></li>
-          <li><a href="" title="FAQ">TERMS & CONDITIONS</a></li>
-          <li><a href="" title="FAQ">RETURNS & SHIPPING</a></li>
-          <li><a href="" title="FAQ">COMPETITIONS</a></li>
-    
-        </ul>
+      <div class="text-wraper py-0 px-[48px] md:text-left">
+      <h1 class="pb-4 font-bold">CUSTOMER EXPERIENCE</h1>
+      <ul>
+      <li><a href="" title="FAQ">FAQ</a></li>
+      <li><a href="" title="FAQ">TERMS & CONDITIONS</a></li>
+      <li><a href="" title="FAQ">RETURNS & SHIPPING</a></li>
+      <li><a href="" title="FAQ">COMPETITIONS</a></li>
+      </ul>
       </div>
-    
       </div>
-    
       <div class="contact md:w-[20%] text-center max-md:pb-8">
-        <div class="text-wraper py-0 px-[48px] md:text-left">
-        <h1 class="pb-4 font-bold">CONTACT</h1>
-        <ul>
-          <li><a href="" title="FAQ">ASK A DIETITIAN</a></li> 
-          <li><a href="" title="FAQ">CONTACT US</a></li>
-          <li><a href="" title="FAQ">FUTUREPRENEURS</a></li>
-        </ul>
+      <div class="text-wraper py-0 px-[48px] md:text-left">
+      <h1 class="pb-4 font-bold">CONTACT</h1>
+      <ul>
+      <li><a href="" title="FAQ">ASK A DIETITIAN</a></li> 
+      <li><a href="" title="FAQ">CONTACT US</a></li>
+      <li><a href="" title="FAQ">FUTUREPRENEURS</a></li>
+      </ul>
       </div>
       </div>
-    
+
       <div class="subscribe md:w-[20%] text-center max-md:px-4">
-        <div class="text-wraper py-0 md:text-left">
-        <h1 class="pb-4 font-bold">SUBSCRIBE</h1>
-       <p>Sign up to find out about new products, VIP <br> offers & news.</p>
+      <div class="text-wraper py-0 md:text-left">
+      <h1 class="pb-4 font-bold">SUBSCRIBE</h1>
+      <p>Sign up to find out about new products, VIP <br> offers & news.</p>
       </div>
-    </div>
-</div>
-
-<div class="text-center pt-8  ">
-  <p>Powered by Shopify /Built by TDMC</p>
-</div>
-  
-
-</footer>
-
-
-</section>
+      <form class="pt-4">
+         <div class="footer-form-container flex">
+            <input class="px-4 py-2 w-full borde rounded-[2px] border-solid border-[1px] border-[#e0e0e0] mr-2" placeholder="Your Email">
+            <div class="footer--form-submit" data-item="button">
+            <button class="px-4 leading-[45px] bg-[#595959] text-[white] rounded-[2px]">Ok</button>
+            </div>
+         </div>
+      </form>
 
 
- </div>
+      </div>
 
-  <!-- <script type="module" src="app.js"></script> -->
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      var showDuration = 200; // Duration in milliseconds
-      var hideDuration = 200; // Duration in milliseconds
-  
-      $(".menu-drop").mouseenter(function() {
-        var siblingUl = $(this).next('.menu-new-drop');
-      siblingUl.fadeIn(showDuration);
-      });
-  
-      // Hide submenu on mouse leave
-      $(".menu-new-drop").mouseleave(function() {
-        $(this).fadeOut(hideDuration);
-      });
+      </div>
+      <div class="text-center pt-8  ">
+      <p>Powered by Shopify /Built by TDMC</p>
+      </div>
+      </footer>
+      </section>
+      </div>
+
+     <script>
+         $(document).ready(function() {
+           var showDuration = 200; // Duration in milliseconds
+           var hideDuration = 200; // Duration in milliseconds
+         
+           $(".menu-drop").mouseenter(function() {
+             var siblingUl = $(this).next('.menu-new-drop');
+           siblingUl.fadeIn(showDuration);
+           });
+         
+           // Hide submenu on mouse leave
+           $(".menu-new-drop").mouseleave(function() {
+             $(this).fadeOut(hideDuration);
+           });
+         });
+      </script>
+<!-- mobile header code  -->
+      <script>
+         $(document).ready(function(){
+             // Hide the element with the ID "myElement" when the page loads
+             $(".menu-wraper").hide();
+             $(".close-hamb").hide();
+         
+             // Show the hidden element when the "Show" button is clicked
+             $(".hamburgur").click(function(){
+               $(".menu-wraper").show().css('transform', 'translateX(0%)');
+               
+                 $(".hamburgur").hide();
+                 $(".close-hamb").show();
+             });
+         
+             $(".close-hamb").click(function(){
+               $(".menu-wraper").css('transform', 'translateX(-100%)');
+                $(".hamburgur").show();
+                 $(".close-hamb").hide();
+                 
+             });
+         
+             $(".sub-menu").hide();
+             $(".arrow").click(function(){
+              $(".sub-menu").show().css('transform', 'translateX(0%)');
+             
+             });
+             $(".back").click(function(){
+                $(".sub-menu").css('transform', 'translateX(100%)');
+             
+             });
+             
+             // 2nd element
+             $(".sub-menu1").hide();
+         
+         $("#arrow1 ").click(function(){
+         $(".sub-menu1").show().css('transform', 'translateX(0%)');
+         
+         });
+         
+         $(".back1").click(function(){
+         $(".sub-menu1").css('transform', 'translateX(100%)');
+         
+         
+         
+         });
+         
+         
+           // smart center
+           $(".sub-menu2").hide();
+          $("#arrow2 ").click(function(){
+         $(".sub-menu2").show().css('transform', 'translateX(0%)');
+         });
+         
+         $(".back2").click(function(){
+         $(".sub-menu2").css('transform', 'translateX(100%)');
+         });
+         
+           // Shop
+            $(".sub-menu3").hide();
+          $("#arrow3 ").click(function(){
+         $(".sub-menu3").show().css('transform', 'translateX(0%)');
+         });
+         
+         $(".back3").click(function(){
+         $(".sub-menu3").css('transform', 'translateX(100%)');
+         });
+         
+         // our range
+         $(".sub-menu4").hide();
+          $("#arrow4 ").click(function(){
+         $(".sub-menu4").show().css('transform', 'translateX(0%)');
+         });
+         
+         $(".back4").click(function(){
+         $(".sub-menu4").css('transform', 'translateX(100%)');
+         });
+         
+         // View By Products
+         $(".sub-menu5").hide();
+          $("#arrow5 ").click(function(){
+         $(".sub-menu5").show().css('transform', 'translateX(0%)');
+         });
+         
+         $(".back5").click(function(){
+         $(".sub-menu5").css('transform', 'translateX(100%)');
+         });
+         
+          // View By science
+         $(".sub-menu6").hide();
+          $("#arrow6 ").click(function(){
+         $(".sub-menu6").show().css('transform', 'translateX(0%)');
+         });
+         
+         $(".back6").click(function(){
+         $(".sub-menu6").css('transform', 'translateX(100%)');
+         });
+         
+         
     });
-  </script>
+      </script>
+<!-- end mobile header code  -->
 
-  <!--  -->
-  <script>
-    $(document).ready(function(){
-        // Hide the element with the ID "myElement" when the page loads
-        $(".menu-wraper").hide();
-        $(".close-hamb").hide();
-    
-        // Show the hidden element when the "Show" button is clicked
-        $(".hamburgur").click(function(){
-          $(".menu-wraper").show().css('transform', 'translateX(0%)');
-          
-            $(".hamburgur").hide();
-            $(".close-hamb").show();
-        });
-    
-        $(".close-hamb").click(function(){
-          $(".menu-wraper").css('transform', 'translateX(-100%)');
-           $(".hamburgur").show();
-            $(".close-hamb").hide();
-            
-        });
-    
-        $(".sub-menu").hide();
-        $(".arrow").click(function(){
-         $(".sub-menu").show().css('transform', 'translateX(0%)');
-        
-        });
-        $(".back").click(function(){
-           $(".sub-menu").css('transform', 'translateX(100%)');
-        
-        });
-        
-        // 2nd element
-        $(".sub-menu1").hide();
-    
-    $("#arrow1 ").click(function(){
-    $(".sub-menu1").show().css('transform', 'translateX(0%)');
-    
-    });
-    
-    $(".back1").click(function(){
-    $(".sub-menu1").css('transform', 'translateX(100%)');
-    
-    
-    
-    });
-
-
-      // smart center
-      $(".sub-menu2").hide();
-     $("#arrow2 ").click(function(){
-    $(".sub-menu2").show().css('transform', 'translateX(0%)');
-    });
-    
-    $(".back2").click(function(){
-    $(".sub-menu2").css('transform', 'translateX(100%)');
-    });
-
-      // Shop
-       $(".sub-menu3").hide();
-     $("#arrow3 ").click(function(){
-    $(".sub-menu3").show().css('transform', 'translateX(0%)');
-    });
-    
-    $(".back3").click(function(){
-    $(".sub-menu3").css('transform', 'translateX(100%)');
-    });
-
-   // our range
-   $(".sub-menu4").hide();
-     $("#arrow4 ").click(function(){
-    $(".sub-menu4").show().css('transform', 'translateX(0%)');
-    });
-    
-    $(".back4").click(function(){
-    $(".sub-menu4").css('transform', 'translateX(100%)');
-    });
-
-  // View By Products
-  $(".sub-menu5").hide();
-     $("#arrow5 ").click(function(){
-    $(".sub-menu5").show().css('transform', 'translateX(0%)');
-    });
-    
-    $(".back5").click(function(){
-    $(".sub-menu5").css('transform', 'translateX(100%)');
-    });
-
-     // View By science
-  $(".sub-menu6").hide();
-     $("#arrow6 ").click(function(){
-    $(".sub-menu6").show().css('transform', 'translateX(0%)');
-    });
-    
-    $(".back6").click(function(){
-    $(".sub-menu6").css('transform', 'translateX(100%)');
-    });
-    
-    
-
-
-
-
-    
-    });
+<!-- product slider code -->
+      <script type="module">
+         import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
+       
+         const keenSlider = new KeenSlider(
+           '#keen-slider',
+           {
+             loop: true,
+             slides: {
+               origin: 'center',
+               perView: 1,
+               spacing: 16,
+             },
+             breakpoints: {
+               '(min-width: 1024px)': {
+                 slides: {
+                   origin: 'auto',
+                   perView: 4,
+                   spacing: 32,
+                 },
+               },
+             },
+           },
+           []
+         )
+       
+         const keenSliderPrevious = document.getElementById('keen-slider-previous')
+         const keenSliderNext = document.getElementById('keen-slider-next')
+       
+         keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
+         keenSliderNext.addEventListener('click', () => keenSlider.next())
+         
+       </script>
+<!-- end product slider code -->
+<!-- testimonial code -->
+<script type="module">
+   import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
+ 
+   const keenSlider1 = new KeenSlider(
+     '#keen-slider1',
+     {
+       loop: true,
+       slides: {
+         origin: 'center',
+         perView: 1,
+         spacing: 16,
+       },
+       breakpoints: {
+         '(min-width: 1024px)': {
+           slides: {
+             origin: 'auto',
+             perView: 5,
+             spacing: 32,
+           },
+         },
+       },
+     },
+     []
+   )
+ 
+   const keenSliderPrevious1 = document.getElementById('keen-slider-previous1')
+   const keenSliderNext1 = document.getElementById('keen-slider-next1')
+ 
+   keenSliderPrevious1.addEventListener('click', () => keenSlider1.prev())
+   keenSliderNext1.addEventListener('click', () => keenSlider1.next())
  </script>
+<!-- end testimonial code -->
 
+<!-- banner slider code -->
+<!-- <script>
+   let slideIndex = 0;
+   let slides = document.querySelectorAll(".mySlides");
+   let slideInterval;
+ 
+   showSlides();
+ 
+   // Start the automatic slide show
+   startAutoSlideShow();
+ 
+   function plusSlides(n) {
+     slideIndex += n;
+     if (slideIndex < 0) {
+       slideIndex = slides.length - 1;
+     }
+     if (slideIndex >= slides.length) {
+       slideIndex = 0;
+     }
+     showSlides();
+     restartAutoSlideShow();
+   }
+ 
+   function currentSlide(n) {
+     slideIndex = n;
+     if (slideIndex < 0) {
+       slideIndex = slides.length - 1;
+     }
+     if (slideIndex >= slides.length) {
+       slideIndex = 0;
+     }
+     showSlides();
+     restartAutoSlideShow();
+   }
+ 
+   function showSlides() {
+     slides.forEach((slide) => {
+       slide.classList.add("hidden"); // Use Tailwind's 'hidden' class to hide slides
+     });
+     slideIndex %= slides.length;
+     slides[slideIndex].classList.remove("hidden"); // Remove 'hidden' class to show the slide
+   }
+ 
+   // Function to start the automatic slide show
+   function startAutoSlideShow() {
+     slideInterval = setInterval(function () {
+       plusSlides(1);
+     }, 3000); // Change slide every 3 seconds (adjust this interval as needed)
+   }
+ 
+   // Function to restart the automatic slide show
+   function restartAutoSlideShow() {
+     clearInterval(slideInterval);
+     startAutoSlideShow();
+   }
+ </script> -->
+<!-- end banner slider code -->
+<script>
+   let slideIndex = 0;
+   let slides = document.querySelectorAll(".mySlides");
+   let slideInterval;
+ 
+   showSlides();
+ 
+   // Start the automatic slide show
+   startAutoSlideShow();
+ 
+   function plusSlides(n) {
+     slideIndex += n;
+     if (slideIndex < 0) {
+       slideIndex = slides.length - 1;
+     }
+     if (slideIndex >= slides.length) {
+       slideIndex = 0;
+     }
+     showSlides();
+     restartAutoSlideShow();
+   }
+ 
+   function currentSlide(n) {
+     slideIndex = n;
+     if (slideIndex < 0) {
+       slideIndex = slides.length - 1;
+     }
+     if (slideIndex >= slides.length) {
+       slideIndex = 0;
+     }
+     showSlides();
+     restartAutoSlideShow();
+   }
+ 
+   function showSlides() {
+     slides.forEach((slide, index) => {
+       if (index === slideIndex) {
+         slide.classList.remove("hidden");
+       } else {
+         slide.classList.add("hidden");
+       }
+     });
+   }
+ 
+   // Function to start the automatic slide show
+   function startAutoSlideShow() {
+     slideInterval = setInterval(function () {
+       plusSlides(1);
+     }, 3000); // Change slide every 3 seconds (adjust this interval as needed)
+   }
+ 
+   // Function to restart the automatic slide show
+   function restartAutoSlideShow() {
+     clearInterval(slideInterval);
+     startAutoSlideShow();
+   }
+ </script>
+ 
 
-
-
-</body>
+ </body>
 </html>
+
